@@ -19,60 +19,45 @@
         <![endif]-->
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="css/img/logo.png" class="logo" alt=""/>
-                    </a>
+                    <a href="./" class="navbar-brand">Bootstrap 3 Menu Generator</a>
                 </div>
-                <div class="navbar-collapse collapse">
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
-                        <li >
-
-                            <span class="bankVideo-navbarItem">
-                                <a href="tel:+7(495)1009090">
-                                    +7 (495) 100 - 90 - 90
-                                </a>
-                            </span>
-                        </li>
-                        <li> 
-                            <a href="/basket" >
-                                <span class="bankVideo-navbarItem ">
-                                    <span class="left bankVideo-basket">Ваша корзина</span>
-                                    <span class="left bankVideo-basketCount">
-                                        Кол-во: 199 шт.
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
                         <li>
-                            <span class="bankVideo-navbarItem">
-                                <a href="#" class="bankVideo-signUp">Регистрация</a>
-                                /
-                                <a href="#" class="bankVideo-signUp">Вход</a>
-                            </span>
+                            <a href="#">Getting started</a>
                         </li>
                         <li class="dropdown">
-                            <div class="chooseLang">Выбор языка</div>
-                            <a href="#" class="dropdown-toggle bankVideo-langDropdown" data-toggle="dropdown"> Русский
-                                <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Русский</a></li>
-                                <li><a href="#">English</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="#">Components</a>
+                        </li>
+                        <li>
+                            <a href="#">JavaScript</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Customize</a>
+                        </li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </nav>
             </div>
-        </div>
-        <!-- Begin page content -->
+        </header>
         <div class="wrapper containerSmall ">
             <ul class="menu">
                 <li >
@@ -115,16 +100,13 @@
                         Для покупателей
                     </a>
                 </li>
-                <li class="col-lg-2 col-md-3 col-xs-12">
-                    <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                <li >
+                    <form role="search">
+                        <input type="text" class="form-control searchInput left" placeholder="Search">
+                        <button type="submit" class="searchBtn left"></button>
                     </form>
                 </li>
             </ul>
-            <!--</div>-->
             <!--</div>-->
         </div>
         <div id="footer">

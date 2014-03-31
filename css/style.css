@@ -37,6 +37,29 @@ body {
 }
 
 
+.navbar-inverse { background-color: #111111}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #111111}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #111111}
+.dropdown-menu { background-color: #111111}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #000000}
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand { color: #FFFFFF}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #07b5b6}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+
+
+
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -62,7 +85,7 @@ body {
     color: #fff;
 }
 #footer .footerDark{
-border-bottom: 1px solid #07bcb5;
+    border-bottom: 1px solid #07bcb5;
 }
 
 code {
@@ -84,14 +107,11 @@ code {
 
 .bankVideo-navbar, .bankVideo-navbar .navbar-header,
 .bankVideo-navbar .navbar-collapse{
-    min-height: 78px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 
 }
 .bankVideo-navbar .navbar-brand{
-    height: 78px;
-    line-height: 45px;
 }
 .logo{
     display: inline-block;
@@ -99,9 +119,7 @@ code {
     min-width: 110px;
 }
 .bankVideo-navbarItem{
-    min-height: 78px;
     color: #fff;
-    line-height: 78px;
     font-size: 14px;
 }
 .bankVideo-navbarItem a, 
@@ -227,7 +245,7 @@ code {
     /**/
     padding: 0 0 0 7px;
     display: inline-block;
-     font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 .videoLink{
     background: #07bcb5;
@@ -243,20 +261,36 @@ code {
     padding: 0 7px 0 0;
 }
 
+
+.searchBtn{
+    background: url(img/search.png) #111111 center center no-repeat;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+.searchInput{
+    width: 150px;
+    height: 23px;
+    border-radius: 0;
+    background: #fff;
+}
+
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
     /* Styles */
-    .bankVideo-navbarItem{
-        line-height: 60px;
-    }
-    .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
-        min-height: 60px;
-    }
-    .bankVideo-navbar .navbar-brand {
-        height: 60px;
-    }
+    /*    .bankVideo-navbarItem{
+            line-height: 60px;
+        }
+        .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
+            min-height: 60px;
+        }
+        .bankVideo-navbar .navbar-brand {
+            height: 60px;
+        }*/
     .bankVideo-signUp{
         font-size: 14px;
         width: 100%;
@@ -268,15 +302,15 @@ and (max-width : 480px) {
 @media only screen 
 and (min-width : 321px) {
     /* Styles */
-    .bankVideo-navbarItem{
-        line-height: 60px;
-    }
-    .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
-        min-height: 60px;
-    }
-    .bankVideo-navbar .navbar-brand {
-        height: 60px;
-    }
+    /*    .bankVideo-navbarItem{
+            line-height: 60px;
+        }
+        .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
+            min-height: 60px;
+        }
+        .bankVideo-navbar .navbar-brand {
+            height: 60px;
+        }*/
 }
 
 /* Smartphones (portrait) ----------- */
@@ -292,9 +326,9 @@ and (max-width : 320px) {
     body{
         outline: 1px solid violet;
     }
-/*    .containerSmall{
-        width: 700px;
-    }*/
+    /*    .containerSmall{
+            width: 700px;
+        }*/
 
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -304,28 +338,28 @@ and (max-width : 320px) {
     .chooseLang{
         width: auto;
     }
-    .bankVideo-navbarItem{
-        line-height: 60px;
-    }
-    .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
-        min-height: 60px;
-    }
-    .bankVideo-navbar .navbar-brand {
-        height: 60px;
-    }
-    .navbar-brand {
-        padding: 7px 15px;
-    }
-    .wrapper{
-        padding-top: 140px;
-    }
+    /*    .bankVideo-navbarItem{
+            line-height: 60px;
+        }
+        .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
+            min-height: 60px;
+        }
+        .bankVideo-navbar .navbar-brand {
+            height: 60px;
+        }*/
+    /*    .navbar-brand {
+            padding: 7px 15px;
+        }*/
+    /*    .wrapper{
+            padding-top: 140px;
+        }*/
 }
 @media (min-width: 992px) {
     body{
         outline: 1px solid gold;
     }
     .containerSmall{
-        width: 910px;
+        width: 915px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -339,6 +373,6 @@ and (max-width : 320px) {
         outline: 1px solid lightsalmon;
     }
     .containerSmall{
-        width: 910px;
+        width: 915px;
     }
 }
