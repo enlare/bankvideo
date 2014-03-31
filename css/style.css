@@ -1,0 +1,344 @@
+/* 
+    Document   : style
+    Created on : 29.03.2014, 18:20:40
+    Author     : linn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    /*margin-bottom: 120px;*/
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background: url(img/bg.jpg) 0 0 repeat;
+    font-size: 16px;
+    min-height: 100%;
+    height: 100%;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height:120px;
+    /*background-color: #f5f5f5;*/
+    margin-top: -100%;
+    color: #fff
+}
+#footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.wrapper {
+    padding: 90px 15px 120px 15px;
+    background: #fff;
+    height: 100%;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+#footer  > .containerSmall {
+    /*background-color: #07bcb5;*/
+    width: 100%;
+    height: 120px;
+    padding-left: 0;
+    padding-right: 0;
+    background: #333;
+    border-top: 6px solid #07bcb5;
+    font-family: Arial,Helvetica,Garuda,sans-serif;
+    color: #fff;
+}
+#footer .footerDark{
+border-bottom: 1px solid #07bcb5;
+}
+
+code {
+    font-size: 80%;
+}
+
+
+.containerSmall{
+    outline: 1px solid yellow;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container{
+    outline: 1px solid red;
+}
+
+
+.bankVideo-navbar, .bankVideo-navbar .navbar-header,
+.bankVideo-navbar .navbar-collapse{
+    min-height: 78px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bankVideo-navbar .navbar-brand{
+    height: 78px;
+    line-height: 45px;
+}
+.logo{
+    display: inline-block;
+    width: 100%;
+    min-width: 110px;
+}
+.bankVideo-navbarItem{
+    min-height: 78px;
+    color: #fff;
+    line-height: 78px;
+    font-size: 14px;
+}
+.bankVideo-navbarItem a, 
+.bankVideo-basketWrapper a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.containerSmall{
+    max-width: 910px;
+}
+.chooseLang{
+    width:44px;
+    white-space: normal;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+    /*line-height: 40px;*/
+}
+
+
+.bankVideo-langDropdown{
+    color: #07bcb5;
+    font-size: 16px;
+    text-decoration: none;
+}
+.bankVideo-langDropdown:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.bankVideo-signUp{
+    font-size: 18px;
+}
+.bankVideo-basket{
+    background: url(img/basket.png) top right no-repeat;
+    padding: 0 25px 0 0 ;
+    margin: 0 5px 0 0;
+}
+
+.noPaddingRight{
+    padding-right: 0 !important;
+}
+
+.paymentLinksWrapper{
+    background: url(img/bg.jpg) 0 0 repeat;
+    width: 100%;
+    height: auto;
+    /*padding: 3px 30px 0px 5px*/
+}
+.paymentLinks{
+    background: url(img/footerIcon.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 39px;
+    margin: auto 0;
+}
+.visaLink{
+    background-position: 0 0;
+    width: 121px;
+}
+.qiwiLink{
+    background-position: -124px 0px;
+    width: 79px;
+}
+.yaLink{
+    background-position: -207px 0px;
+    width: 87px;
+}
+.beeLink{
+    background-position: -299px 0px;
+    width: 94px;
+}
+.megafonLink{
+    background-position: -396px 0px;
+    width: 123px;
+}
+.mtsLink{
+    background-position: -523px 0px;
+    width: 79px;
+}
+.assistLink{
+    background: url(img/assist.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 38px;
+    width:35px; 
+    /*margin: auto 0;*/
+}
+.socialLinks{
+    background: url(img/social.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 19px;
+}
+.fbLink{
+    background-position: 0 0 ;
+    width: 74px;
+}
+.twLink{
+    background-position: -75px 0;
+    width: 68px;
+}
+.vkLink{
+    background-position: -145px;
+    width: 34px;
+
+}
+.menu{
+    list-style: none;
+    min-height: 44px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background: #1a1a1a;
+    padding: 0;
+}
+.menu li{
+    float: left;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    /*height: 44px;*/
+    /**/
+    padding: 0 0 0 7px;
+    display: inline-block;
+     font-family: 'Ubuntu Condensed', sans-serif;
+}
+.videoLink{
+    background: #07bcb5;
+    padding: 0 7px !important;
+}
+.photoLink{
+    background: #fff;
+    color: #07bcb5 !important;
+    padding: 0 7px !important;
+}
+.dottedBorder{
+    border-right: 1px dotted #fff;
+    padding: 0 7px 0 0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+    /* Styles */
+    .bankVideo-navbarItem{
+        line-height: 60px;
+    }
+    .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
+        min-height: 60px;
+    }
+    .bankVideo-navbar .navbar-brand {
+        height: 60px;
+    }
+    .bankVideo-signUp{
+        font-size: 14px;
+        width: 100%;
+    }
+    /*wrapper*/ 
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    /* Styles */
+    .bankVideo-navbarItem{
+        line-height: 60px;
+    }
+    .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
+        min-height: 60px;
+    }
+    .bankVideo-navbar .navbar-brand {
+        height: 60px;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    /* Styles */
+}
+
+
+
+
+@media (min-width: 768px) {
+    body{
+        outline: 1px solid violet;
+    }
+/*    .containerSmall{
+        width: 700px;
+    }*/
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bankVideo-signUp{
+        font-size: 14px;
+    }
+    .chooseLang{
+        width: auto;
+    }
+    .bankVideo-navbarItem{
+        line-height: 60px;
+    }
+    .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
+        min-height: 60px;
+    }
+    .bankVideo-navbar .navbar-brand {
+        height: 60px;
+    }
+    .navbar-brand {
+        padding: 7px 15px;
+    }
+    .wrapper{
+        padding-top: 140px;
+    }
+}
+@media (min-width: 992px) {
+    body{
+        outline: 1px solid gold;
+    }
+    .containerSmall{
+        width: 910px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .bankVideo-basketWrapper{
+        padding-left: 8px !important;
+    }
+
+}
+@media (min-width: 1200px) {
+    body{
+        outline: 1px solid lightsalmon;
+    }
+    .containerSmall{
+        width: 910px;
+    }
+}
