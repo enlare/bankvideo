@@ -1,20 +1,9 @@
-/* 
-    Document   : style
-    Created on : 29.03.2014, 18:20:40
-    Author     : linn
-    Description:
-        Purpose of the stylesheet follows.
-*/
-/* Sticky footer styles
--------------------------------------------------- */
 html {
     position: relative;
     min-height: 100%;
     height: 100%;
 }
 body {
-    /* Margin bottom by footer height */
-    /*margin-bottom: 120px;*/
     font-family: 'Ubuntu Condensed', sans-serif;
     background: url(img/bg.jpg) 0 0 repeat;
     font-size: 16px;
@@ -25,9 +14,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height:120px;
-    /*background-color: #f5f5f5;*/
     margin-top: -100%;
     color: #fff
 }
@@ -59,7 +46,10 @@ body {
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
-
+.bankvideo-navbar >.container{ padding-left: 25px; padding-right: 15px;}
+.bankvideo-navbar .navbar-nav{
+    float: right;
+}
 
 .navbar-brand,
 .navbar-nav li .bankVideo-navbarItem{
@@ -68,11 +58,14 @@ body {
     padding-top: 0;
     color: #fff;
 }
+.navbar-brand{
+    padding: 0;
+}
 
+.basketWrapper{
+    margin: 0 165px 0 100px;
+}
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
 .wrapper {
     padding: 78px 0 120px 0 !important;
@@ -85,7 +78,6 @@ body {
 }
 
 #footer  > .containerSmall {
-    /*background-color: #07bcb5;*/
     width: 100%;
     height: 120px;
     padding-left: 0;
@@ -99,31 +91,14 @@ body {
     border-bottom: 1px solid #07bcb5;
 }
 
-/*code {
-    font-size: 80%;
-}*/
-
-
 .containerSmall{
-    /*outline: 1px solid yellow;*/
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-/*.container{
-    outline: 1px solid red;
-}*/
 
 
-/*.bankVideo-navbar, .bankVideo-navbar .navbar-header,
-.bankVideo-navbar .navbar-collapse{
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-
-}*/
-.bankVideo-navbar .navbar-brand{
-}
 .logo{
     display: inline-block;
     width: 100%;
@@ -150,9 +125,8 @@ body {
     white-space: normal;
     display: inline-block;
     font-size: 14px;
-    margin: 0 10px 0 0;
+    margin: 5px 10px 0 0;
     color: #fff;
-    /*line-height: 40px;*/
 }
 
 
@@ -182,7 +156,6 @@ body {
     background: url(img/bg.jpg) 0 0 repeat;
     width: 100%;
     height: auto;
-    /*padding: 3px 30px 0px 5px*/
 }
 .paymentLinks{
     background: url(img/footerIcon.png) 0 0 no-repeat;
@@ -219,7 +192,6 @@ body {
     display: inline-block;
     height: 38px;
     width:35px; 
-    /*margin: auto 0;*/
 }
 .socialLinks{
     background: url(img/social.png) 0 0 no-repeat;
@@ -239,43 +211,14 @@ body {
     width: 34px;
 
 }
-/*.menu{
-    list-style: none;
-    min-height: 44px;
-    margin-left: -15px;
-    margin-right: -15px;
-    background: #1a1a1a;
-    padding: 0;
-}
-.menu li{
-    float: left;
-    display: inline-block;
-    height: 44px;
-    line-height: 44px;
-    width: auto;
-}*/
-/*.menu li a{
-    color: #fff;
-    text-decoration: none;
-    height: 44px;
-    
-    width: 100%;
-    padding: 0 0 0 7px;
-    display: inline-block;
-    font-family: 'Ubuntu Condensed', sans-serif;
-}*/
 
 .menuBlocks{
-    /*list-style: none;*/
     min-height: 44px;
-    /*margin-left: -15px;*/
-    /*margin-right: -15px;*/
     background: #1a1a1a;
     padding: 0;
 }
 .menuBlocks div{
     padding: 0 !important;
-    /*outline: 1px solid red;*/
     background: #1a1a1a;
 }
 .col-custom{
@@ -285,8 +228,6 @@ body {
 .col-custom a{
     color: #fff;
     text-decoration: none;
-    /*height: 44px;*/
-    /**/
     width: 100%;
     padding: 0 0 0 10px;
     display: inline-block;
@@ -309,7 +250,6 @@ body {
 .searchForm{
     height: 44px;
     line-height: 44px;
-    /*margin: 0 10px;*/
 }
 .searchBtn{
     background: url(img/search.png) #111111 center center no-repeat;
@@ -320,7 +260,6 @@ body {
 }
 .searchInput{
     margin: 11px 10px 0;
-    /*width: 155px !important;*/
     width: 85%;
     height: 24px;
     border-radius: 0;
@@ -337,7 +276,6 @@ body {
 }
 .videoWrapper video {  
     width:100%; 
-    /*max-width:500px;*/ 
     height:auto; 
 }
 .greyVideoBlock{
@@ -364,8 +302,6 @@ cyanHref{
     color: #999;
 }
 .sliderWrapper{
-    /*height: 100%;*/
-    /*width: 100%;*/
     text-align: center;
     padding-left: 2px;
     padding-right: 2px;
@@ -421,18 +357,17 @@ cyanHref{
 
 .col-about-project{
     width: 25%;
-   padding: 5px;
-   
+    padding: 5px;
+
 }
 .col-about-project p{
-    /*padding: 5px;*/
     overflow: hidden;
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     white-space: normal;
-     height: 300px;
-     width: 100%;
-     display: inline-block;
+    height: 300px;
+    width: 100%;
+    display: inline-block;
 }
 .bottomBorder{
     border-bottom: 1px dotted #999;
@@ -469,6 +404,7 @@ and (max-width : 480px) {
 @media only screen 
 and (min-width : 321px) {
 
+
 }
 
 /* Smartphones (portrait) ----------- */
@@ -476,7 +412,15 @@ and (min-width : 321px) {
 and (max-width : 320px) {
 
     .navbar-brand{
-        width: 208px;
+        /*width: 208px;*/
+         width: 170px;
+    }
+    .bankVideo-signUp{
+        font-size: 14px;
+        width: 100%;
+    }
+    .navbar-header{
+       
     }
 }
 
@@ -485,6 +429,10 @@ and (max-width : 320px) {
     .dottedBorder{
         border: none;
     }
+    .bankvideo-navbar .navbar-nav{
+        float: none;
+    }
+
     .navbar-nav li .bankVideo-navbarItem {
         line-height: 30px;
         height: auto;
@@ -504,6 +452,16 @@ and (max-width : 320px) {
     }
     .dropdown{
         text-align: left;
+    }
+    .bankVideo-signUp{
+        font-size: 14px;
+        width: 100%;
+    }
+    .basketWrapper {
+        margin: 0 ;
+    }
+    .signupWrapper{
+        margin-right: 0px;
     }
 }
 
@@ -525,6 +483,15 @@ and (max-width : 320px) {
         border: none;
     }
 
+    .navbar-header{
+        width: 160px;
+    }
+    .basketWrapper {
+        margin: 0 ;
+    }
+    .signupWrapper{
+        margin-right: 0px;
+    }
 }
 @media (min-width: 992px) {
 
@@ -539,7 +506,12 @@ and (max-width : 320px) {
     .bankVideo-basketWrapper{
         padding-left: 8px !important;
     }
-
+    .basketWrapper {
+        margin: 0 67px 0 38px;
+    }
+    .signupWrapper{
+        margin-right: 20px;
+    }
 }
 @media (min-width: 1200px) {
 
