@@ -435,10 +435,23 @@ cyanHref{
      display: inline-block;
 }
 .bottomBorder{
-    border-bottom: 1px solid #999;
+    border-bottom: 1px dotted #999;
+    margin-bottom: 20px;
 }
 
-
+.newsBlock{
+    padding: 0;
+    width: 26%;
+    float: left
+}
+.newsPhoto{
+    width: 40%;
+}
+.vkBlock, .fbBlock, .twBlock{
+    /*width: 20%;*/
+    float: left;
+    padding: 0 5px;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
