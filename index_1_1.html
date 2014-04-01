@@ -19,52 +19,40 @@
         <![endif]-->
     </head>
     <body>
-        <header class="navbar navbar-inverse navbar-fixed-top bankvideo-navbar " >
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
             <div class="container">
                 <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="./" class="navbar-brand">  
-                        <img src="css/img/logo.png" class="logo" alt=""/>
-                    </a>
+                    <a href="./" class="navbar-brand">Bootstrap 3 Menu Generator</a>
                 </div>
-                <nav class="collapse navbar-collapse " role="navigation">
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
-                            <span class="bankVideo-navbarItem">
-                                +7 (495) 100 - 90 - 90
-                            </span>
-                        </li>
-
-                        <li>
-                            <a href="/basket" class="bankVideo-navbarItem ">
-                                <span class="left bankVideo-basket">Ваша корзина</span>
-                                <span class="left bankVideo-basketCount">
-                                    Кол-во: 199 шт.
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="bankVideo-navbarItem">
-                                <a href="#" class="bankVideo-signUp">Регистрация</a>
-                                /
-                                <a href="#" class="bankVideo-signUp">Вход</a>
-                            </div>
+                            <a href="#">Getting started</a>
                         </li>
                         <li class="dropdown">
-                            <div class="chooseLang">Выбор языка</div>
-                            <a href="#" class="dropdown-toggle bankVideo-langDropdown" data-toggle="dropdown"> 
-                                Русский 
-                                <b class="caret"></b>
-                            </a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Русский</a></li>
-                                <li><a href="#">English</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="#">Components</a>
+                        </li>
+                        <li>
+                            <a href="#">JavaScript</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Customize</a>
                         </li>
                     </ul>
                 </nav>
@@ -112,10 +100,10 @@
                         Для покупателей
                     </a>
                 </li>
-                <li class="right">
-                    <form role="search" class="form-inline">
-                        <input type="text" class="form-control searchInput" placeholder="Search">
-                        <button type="submit" class="searchBtn "></button>
+                <li >
+                    <form role="search">
+                        <input type="text" class="form-control searchInput left" placeholder="Search">
+                        <button type="submit" class="searchBtn left"></button>
                     </form>
                 </li>
             </ul>

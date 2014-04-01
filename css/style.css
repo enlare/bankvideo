@@ -45,7 +45,11 @@ body {
 .navbar-inverse { border-color: #080808}
 .navbar-inverse .navbar-brand { color: #FFFFFF}
 .navbar-inverse .navbar-brand:hover { color: #FFFFFF}
-.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { 
+    color: #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
 .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
@@ -57,7 +61,13 @@ body {
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
 
 
-
+.navbar-brand,
+.navbar-nav li .bankVideo-navbarItem{
+    line-height: 78px;
+    height: 78px;
+    padding-top: 0;
+    color: #fff;
+}
 
 
 /* Custom page CSS
@@ -65,7 +75,7 @@ body {
 /* Not required for template or sticky footer method. */
 
 .wrapper {
-    padding: 90px 15px 120px 15px;
+    padding: 78px 0 120px 0;
     background: #fff;
     height: 100%;
 }
@@ -88,29 +98,29 @@ body {
     border-bottom: 1px solid #07bcb5;
 }
 
-code {
+/*code {
     font-size: 80%;
-}
+}*/
 
 
 .containerSmall{
-    outline: 1px solid yellow;
+    /*outline: 1px solid yellow;*/
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-.container{
+/*.container{
     outline: 1px solid red;
-}
+}*/
 
 
-.bankVideo-navbar, .bankVideo-navbar .navbar-header,
+/*.bankVideo-navbar, .bankVideo-navbar .navbar-header,
 .bankVideo-navbar .navbar-collapse{
     color: #fff;
     font-family: 'Roboto', sans-serif;
 
-}
+}*/
 .bankVideo-navbar .navbar-brand{
 }
 .logo{
@@ -124,12 +134,15 @@ code {
 }
 .bankVideo-navbarItem a, 
 .bankVideo-basketWrapper a{
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
 
 }
 .containerSmall{
     max-width: 910px;
+}
+.dropdown{
+    text-align: center;
 }
 .chooseLang{
     width:44px;
@@ -137,12 +150,13 @@ code {
     display: inline-block;
     font-size: 14px;
     margin: 0 10px 0 0;
+    color: #fff;
     /*line-height: 40px;*/
 }
 
 
 .bankVideo-langDropdown{
-    color: #07bcb5;
+    color: #07bcb5 !important;
     font-size: 16px;
     text-decoration: none;
 }
@@ -237,12 +251,14 @@ code {
     display: inline-block;
     height: 44px;
     line-height: 44px;
+    width: auto;
 }
 .menu li a{
     color: #fff;
     text-decoration: none;
     /*height: 44px;*/
     /**/
+    width: 100%;
     padding: 0 0 0 7px;
     display: inline-block;
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -269,7 +285,7 @@ code {
     height: 25px;
 }
 .searchInput{
-    width: 150px;
+    width: 100px;
     height: 23px;
     border-radius: 0;
     background: #fff;
@@ -295,6 +311,18 @@ and (max-width : 480px) {
         font-size: 14px;
         width: 100%;
     }
+    .menu li{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu li a:hover{
+        background: #07b5b6;
+        color: #fff;
+    }
+    .menu li .dottedBorder{
+        border: none;
+    }
     /*wrapper*/ 
 }
 
@@ -317,18 +345,61 @@ and (min-width : 321px) {
 @media only screen 
 and (max-width : 320px) {
     /* Styles */
+    .menu li{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu li a:hover{
+        background: #07b5b6;
+        color: #fff;
+    }
+    .menu li .dottedBorder{
+        border: none;
+    }
+    .navbar-brand{
+        width: 208px;
+    }
+}
+
+@media (max-width: 767px)  {
+    .menu li{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu li a:hover{
+        background: #07b5b6;
+        color: #fff;
+    }
+    .menu li .dottedBorder{
+        border: none;
+    }
+    .navbar-nav li .bankVideo-navbarItem {
+        line-height: 30px;
+        height: auto;
+        padding: 0 0 10px 15px;
+        font-size: 16px;
+    }
+    .navbar-header{
+        height: 78px;
+    }
+    .chooseLang {
+        width: auto;
+        padding: 0 0 10px 15px;
+        font-size: 16px;
+    }
+    .dropdown-menu{
+        font-size: 16px;
+    }
+    .dropdown{
+        text-align: left;
+    }
 }
 
 
-
-
 @media (min-width: 768px) {
-    body{
-        outline: 1px solid violet;
-    }
-    /*    .containerSmall{
-            width: 700px;
-        }*/
+
 
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -337,6 +408,7 @@ and (max-width : 320px) {
     }
     .chooseLang{
         width: auto;
+        margin: 10px 0;
     }
     /*    .bankVideo-navbarItem{
             line-height: 60px;
@@ -353,13 +425,32 @@ and (max-width : 320px) {
     /*    .wrapper{
             padding-top: 140px;
         }*/
+    .menu li{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu li a:hover{
+        background: #07b5b6;
+        color: #fff;
+    }
+    .menu li .dottedBorder{
+        border: none;
+    }
+/*    .container{
+        width: 768px;
+    }*/
+    .navbar-header{
+        width: 205px;
+    }
 }
 @media (min-width: 992px) {
-    body{
-        outline: 1px solid gold;
-    }
+
     .containerSmall{
         width: 915px;
+    }
+    .navbar-header{
+        width: 220px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -369,9 +460,7 @@ and (max-width : 320px) {
 
 }
 @media (min-width: 1200px) {
-    body{
-        outline: 1px solid lightsalmon;
-    }
+
     .containerSmall{
         width: 915px;
     }
