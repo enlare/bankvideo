@@ -328,13 +328,14 @@ body {
     display: block;
     position: relative;
     margin: 0 auto 4px auto;
+    /*height: 120px;*/
 }
-.sliderListWrapper ul li a {
+/*.sliderListWrapper ul li a {
     display: inline-block;
     width: 100%;
-}
+}*/
 .sliderListWrapper ul li .sliderOverlay{
-    background: #333;
+    background: #666;
     color: #fff;
     font-size: 14px;
     width: 100%;
@@ -342,14 +343,29 @@ body {
     position: absolute;
     bottom: 0;
     font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 3px 7px 5px;
 }
-.sliderListWrapper ul li .sliderOverlay span{
-    margin: 0 5px 5px 5px;
+.sliderListWrapper ul li .sliderOverlay div{
+    text-align: left;
+    height: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.sliderListWrapper ul li .sliderOverlay span,
+.sliderListWrapper ul li .sliderOverlay a{
+    /*margin: 0 5px 5px 5px;*/
+    float: left;
+    display: inline-block;
+}
+.sliderListWrapper ul li .sliderOverlay a{
+    margin: 0 0 0 5px;
 }
 .sliderWrapper ul li img{
     width: 100%;
     height: auto;
     display: block;
+    /*height: 120px;*/
+    /*width: auto;*/
 }
 .sliderWrapper ul li .sliderOverlay .cyanHref{
     font-size: 14px;
@@ -467,6 +483,13 @@ and (max-width : 320px) {
     }
     .signupWrapper{
         margin-right: 0px;
+    }
+    .videoWrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .greyVideoBlock{
+        left: 10px;
     }
 }
 
