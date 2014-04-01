@@ -25,6 +25,8 @@ body {
 #footer {
     width: 100%;
     color: #fff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #footer a{
     color: #fff;
@@ -101,8 +103,17 @@ body {
 }
 #footer .footerDark{
     border-bottom: 1px solid #07bcb5;
+    width: 100%;
+    height: 85px;
+    padding-top: 7px;
+    display: block;
 }
-
+.footerBottom{
+    line-height: 28px;
+}
+.socialLinksWrapper{
+    margin-top: 13px;
+}
 
 
 .logo{
@@ -541,6 +552,28 @@ and (max-width : 320px) {
         width: 100%;
         float: none;
     }
+    .vkBlock *, .fbBlock *, .twBlock *{
+        margin: 20px auto;
+        display: block;
+    }
+    
+        #footer, #push{
+        height: 265px;
+    }
+    #wrap {
+        margin-bottom: -265px;
+    }
+     #footer .footerDark{
+        height: 175px;
+    }
+    #footer  > .containerSmall{
+        height: 265px;
+    }
+    .footerBottom div{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -564,6 +597,32 @@ and (max-width : 320px) {
     }
     .signupWrapper{
         margin-right: 0px;
+    }
+    .newsBlock{
+        width: 100%;
+        float: none;
+    }
+    .vkBlock, .fbBlock, .twBlock{
+        width: 30%;
+    }
+    .footerBottom .col-xs-12{
+        width: 33%;
+    }
+    #footer, #push{
+        height: 165px;
+    }
+    #wrap {
+        margin-bottom: -165px;
+    }
+     #footer .footerDark{
+        height: 130px;
+    }
+    #footer  > .containerSmall{
+        height: 165px;
+    }
+    .footerBottom div{
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 @media (min-width: 992px) {
