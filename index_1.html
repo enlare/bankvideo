@@ -17,8 +17,11 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
     </head>
     <body>
+        <!-- Part 1: Wrap all page content here -->
+         <div id="wrap">
         <header class="navbar navbar-inverse navbar-fixed-top bankvideo-navbar " >
             <div class="container">
                 <div class="navbar-header">
@@ -70,7 +73,7 @@
                 </nav>
             </div>
         </header>
-        <div class="containerSmall wrapper  ">
+        <div class="containerSmall wrapper">
             <div class="menuBlocks clearfix">
                 <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
                     <a href="#" class="videoLink">
@@ -125,7 +128,7 @@
                     </video> 
                     <div class="greyVideoBlock">
                         <div class="col-md-12">
-                            <span>Freedom(316m)</span>
+                            <span>Freedom (316m)</span>
                             <a href="#" class="cyanHref">Купить</a>
                         </div>
                         <div class="col-md-12">
@@ -142,19 +145,40 @@
                     <div class="sliderListWrapper">
                         <ul class="slider">
                             <li>
-                                <!--<a href="#" class="sliderHref">-->
                                 <img src="css/img/slider.jpg" class="img-responsive" alt="">
-
                                 <div class="sliderOverlay">
                                     <span >
-                                        Freedom(316m)
+                                        Freedom (316m)
                                     </span>
                                     <span >
                                         <span>Автор:</span>
                                         <a href="#" class="cyanHref">Автор</a>
                                     </span>
                                 </div>
-                                <!--</a>-->
+                            </li>
+                            <li>
+                                <img src="css/img/slider.jpg" class="img-responsive" alt="">
+                                <div class="sliderOverlay">
+                                    <span >
+                                        Freedom (316m)
+                                    </span>
+                                    <span >
+                                        <span>Автор:</span>
+                                        <a href="#" class="cyanHref">Автор</a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="css/img/slider.jpg" class="img-responsive" alt="">
+                                <div class="sliderOverlay">
+                                    <span >
+                                        Freedom (316m)
+                                    </span>
+                                    <span >
+                                        <span>Автор:</span>
+                                        <a href="#" class="cyanHref">Автор</a>
+                                    </span>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -254,58 +278,61 @@
                     <img src="css/img/tw.jpg" alt="">
                 </div>
             </div>
-            <!--        <div id="footer">
-                        <div class="containerSmall">
-                            <div class="footerDark">
-                                <div class="col-lg-9 col-md-9 col-xs-12">
-                                    <div>Мы принимаем к оплате:</div>
-                                    <div class="paymentLinksWrapper left">
-                                        <a href="#" class="left paymentLinks visaLink"></a>
-                                        <a href="#" class="left paymentLinks qiwiLink"></a>
-                                        <a href="#" class="left paymentLinks yaLink"></a>
-                                        <a href="#" class="left paymentLinks beeLink"></a>
-                                        <a href="#" class="left paymentLinks megafonLink"></a>
-                                        <a href="#" class="left paymentLinks mtsLink"></a>
-                                        <a href="#" class="right assistLink"></a>
-                                    </div>
-            
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-xs-12">
-                                    <div>Социальные закладки:</div>
-                                    <div>
-                                        <a href="#" class="left socialLinks fbLink"></a>
-                                        <a href="#" class="left socialLinks twLink"></a>
-                                        <a href="#" class="left socialLinks vkLink"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footerBottom">
-                                <div class="col-lg-4 col-md-4 col-xs-12">
-                                    <a href="/">
-                                        www.bankvideo.com &COPY; 2014   
-                                    </a>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-xs-12">
-                                    Техподдержка: 
-                                    <a href="mailto:sd@bankvideo.com">
-                                        sd@bankvideo.com
-                                    </a>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-xs-12">
-                                    Разработка:
-                                    <a href="/">
-                                        Red Homet
-                                    </a>
-                                </div>
-                            </div>
+            <div id="push"></div>
+        </div>
+        </div>
+        <div id="footer">
+            <div class="containerSmall">
+                <div class="footerDark">
+                    <div class="col-lg-9 col-md-9 col-xs-12">
+                        <div>Мы принимаем к оплате:</div>
+                        <div class="paymentLinksWrapper left">
+                            <a href="#" class="left paymentLinks visaLink"></a>
+                            <a href="#" class="left paymentLinks qiwiLink"></a>
+                            <a href="#" class="left paymentLinks yaLink"></a>
+                            <a href="#" class="left paymentLinks beeLink"></a>
+                            <a href="#" class="left paymentLinks megafonLink"></a>
+                            <a href="#" class="left paymentLinks mtsLink"></a>
+                            <a href="#" class="right assistLink"></a>
                         </div>
-                    </div>-->
 
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-            <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.11.0.min.js"><\/script>')</script>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div>Социальные закладки:</div>
+                        <div>
+                            <a href="#" class="left socialLinks fbLink"></a>
+                            <a href="#" class="left socialLinks twLink"></a>
+                            <a href="#" class="left socialLinks vkLink"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerBottom">
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <a href="/">
+                            www.bankvideo.com &COPY; 2014   
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        Техподдержка: 
+                        <a href="mailto:sd@bankvideo.com">
+                            sd@bankvideo.com
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        Разработка:
+                        <a href="/">
+                            Red Homet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="js/bootstrap.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
