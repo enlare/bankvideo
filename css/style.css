@@ -173,6 +173,7 @@ body {
     background: url(img/bg.jpg) 0 0 repeat;
     width: 100%;
     height: auto;
+    padding: 5px 5px 0 5px;
 }
 .paymentLinks{
     background: url(img/footerIcon.png) 0 0 no-repeat;
@@ -209,6 +210,7 @@ body {
     display: inline-block;
     height: 38px;
     width:35px; 
+    margin-left: 12px;
 }
 .socialLinks{
     background: url(img/social.png) 0 0 no-repeat;
@@ -296,8 +298,10 @@ body {
 .videoWrapper video {  
     width:100%; 
     height:auto; 
+
 }
-.greyVideoBlock{
+.greyVideoBlock, 
+.contentOfDayOverlay{
     background: #333;
     width: auto;
     max-width: 250px;
@@ -309,12 +313,16 @@ body {
     font-size: 14px;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
-.cyanHref{
+.cyanHref, .cyanHref:hover,
+.cyanHref:active,
+.cyanHref:visited{
     color: #07b5b6;
     text-decoration: none;
     font-family: 'Ubuntu Condensed', sans-serif;
+    text-decoration: none;
 }
-.greyVideoBlock .cyanHref{
+.greyVideoBlock .cyanHref,
+.contentOfDayOverlay .cyanHref{
     font-size: 18px;
     margin: 0 0 0 5px;
 }
@@ -398,7 +406,7 @@ body {
 
 
 .col-about-project{
-    width: 25%;
+    width: 24%;
     padding: 0 5px;
     font-size: 13px;
     color: #333333;
@@ -416,15 +424,48 @@ body {
     text-align: justify;
     margin-bottom: 0;
 }
-.col-about-project h3, .newsBlock h3{
+.col-about-project h3, .newsBlock h3, .col-contentOfDay h3{
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 2px;
 }
+
+.col-contentOfDay{
+    width: 38%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.col-contentOfDay h3 a{
+    color: #b4b4b4;
+    font-size: 16px;
+    text-decoration: none;
+}
+.col-contentOfDay h3 a:hover,
+.col-contentOfDay h3 .activeFilter{
+    text-decoration: underline;
+    color: #18c0ba;
+}
+.contentOfDayBig{
+    padding: 3px;
+    position: relative;
+}
+.contentOfDaySmall{
+    width: 33%;
+    padding: 0 3px;
+    display: block;
+}
+
+.contentOfDayBig .contentOfDayOverlay{
+    left: 4px;
+    bottom: 4px;
+}
+
+
 .bottomBorder{
     border-bottom: 1px dotted #999;
     margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .newsBlock{
@@ -475,6 +516,24 @@ body {
     padding: 0 5px;
 }
 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 250px) {
+        #footer, #push{
+        height: 351px!important;
+    }
+    #wrap {
+        margin-bottom: -351px !important;
+    }
+    #footer .footerDark{
+        height: 221px !important;
+    }
+    #footer  > .containerSmall{
+        height: 351px !important;
+    }
+}
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 320px) 
@@ -487,6 +546,19 @@ and (max-width : 480px) {
     .newsTextWrapper{
         width: 65%;
     }
+    #footer, #push{
+        height: 310px!important;
+    }
+    #wrap {
+        margin-bottom: -310px!important;
+    }
+    #footer .footerDark{
+        height: 193px!important;
+    }
+    #footer  > .containerSmall{
+        height: 310px!important;
+    }
+
 }
 
 /* Smartphones (portrait) ----------- */
@@ -502,9 +574,25 @@ and (max-width : 320px) {
     .searchInput{
         width: 77%;
     }
-     .newsTextWrapper{
-        width: 50%;
+    .newsTextWrapper{
+        width: 65%;
     }
+    #footer, #push{
+        height: 320px!important;
+    }
+    #wrap {
+        margin-bottom: -320px !important;
+    }
+    #footer .footerDark{
+        height: 228px !important;
+    }
+    #footer  > .containerSmall{
+        height: 320px !important;
+    }
+    /*    .footerBottom div{
+            padding-left: 5px;
+            padding-right: 5px;
+        }*/
 }
 
 @media (max-width: 767px)  {
@@ -549,7 +637,9 @@ and (max-width : 320px) {
     .videoWrapper{
         padding-left: 10px;
         padding-right: 10px;
+        position: relative;
     }
+
     .greyVideoBlock{
         left: 10px;
     }
@@ -561,27 +651,36 @@ and (max-width : 320px) {
         margin: 20px auto;
         display: block;
     }
-    
-        #footer, #push{
-        height: 265px;
+
+    #footer, #push{
+        height: 275px;
     }
     #wrap {
-        margin-bottom: -265px;
+        margin-bottom: -275px;
     }
-     #footer .footerDark{
-        height: 175px;
+    #footer .footerDark{
+        height: 185px;
     }
     #footer  > .containerSmall{
-        height: 265px;
+        height: 275px;
     }
-    .footerBottom div{
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+
     .col-about-project{
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .col-contentOfDay{
+        width: 100%;
+        float: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .assistLink{
+        padding-left: 12px;
+    }
+     .footerDark .noPaddingRight{
+        padding-right: 15px !important;
     }
 
 }
@@ -615,24 +714,32 @@ and (max-width : 320px) {
     .vkBlock, .fbBlock, .twBlock{
         width: 30%;
     }
-    .footerBottom .col-xs-12{
-        width: 33%;
-    }
-    #footer, #push{
-        height: 165px;
+      #footer, #push{
+        height: 275px;
     }
     #wrap {
-        margin-bottom: -165px;
+        margin-bottom: -275px;
     }
-     #footer .footerDark{
-        height: 130px;
+    #footer .footerDark{
+        height: 185px;
     }
     #footer  > .containerSmall{
-        height: 165px;
+        height: 275px;
     }
-    .footerBottom div{
-        padding-left: 5px;
-        padding-right: 5px;
+
+    .col-about-project{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .col-contentOfDay{
+        width: 100%;
+        float: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footerDark .noPaddingRight{
+        padding-right: 15px !important;
     }
 }
 @media (min-width: 992px) {
@@ -657,6 +764,9 @@ and (max-width : 320px) {
     .dottedBorder{
         border: none;
     }
+    .assistLink{
+        margin-left: 0px;
+    }
 }
 @media (min-width: 1200px) {
 
@@ -675,9 +785,9 @@ and (max-width : 320px) {
     }
 }
 @media (min-width: 1920px) {
-/*    .searchForm{
-        margin: 0 10px;
-    }*/
+    /*    .searchForm{
+            margin: 0 10px;
+        }*/
     .searchInput{
         width: 155px !important;
     }
