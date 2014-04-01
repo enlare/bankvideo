@@ -75,9 +75,10 @@ body {
 /* Not required for template or sticky footer method. */
 
 .wrapper {
-    padding: 78px 0 120px 0;
+    padding: 78px 0 120px 0 !important;
     background: #fff;
     height: 100%;
+
 }
 .container .text-muted {
     margin: 20px 0;
@@ -238,7 +239,7 @@ body {
     width: 34px;
 
 }
-.menu{
+/*.menu{
     list-style: none;
     min-height: 44px;
     margin-left: -15px;
@@ -252,41 +253,76 @@ body {
     height: 44px;
     line-height: 44px;
     width: auto;
+}*/
+/*.menu li a{
+    color: #fff;
+    text-decoration: none;
+    height: 44px;
+    
+    width: 100%;
+    padding: 0 0 0 7px;
+    display: inline-block;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}*/
+
+.menuBlocks{
+    /*list-style: none;*/
+    min-height: 44px;
+    /*margin-left: -15px;*/
+    /*margin-right: -15px;*/
+    background: #1a1a1a;
+    padding: 0;
 }
-.menu li a{
+.menuBlocks div{
+    padding: 0 !important;
+    /*outline: 1px solid red;*/
+    background: #1a1a1a;
+}
+.col-custom{
+    height: 44px;
+    line-height: 44px;
+}
+.col-custom a{
     color: #fff;
     text-decoration: none;
     /*height: 44px;*/
     /**/
     width: 100%;
-    padding: 0 0 0 7px;
+    padding: 0 0 0 10px;
     display: inline-block;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 .videoLink{
     background: #07bcb5;
-    padding: 0 7px !important;
+    padding: 0 20px !important;
 }
 .photoLink{
     background: #fff;
     color: #07bcb5 !important;
-    padding: 0 7px !important;
+    padding: 0 20px !important;
 }
 .dottedBorder{
     border-right: 1px dotted #fff;
-    padding: 0 7px 0 0;
+    padding: 0 10px 0 0;
 }
 
-
+.searchForm{
+    height: 44px;
+    line-height: 44px;
+    /*margin: 0 10px;*/
+}
 .searchBtn{
     background: url(img/search.png) #111111 center center no-repeat;
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 21px;
+    height: 21px;
+    margin: 13px 0 0 0;
 }
 .searchInput{
-    width: 100px;
-    height: 23px;
+    margin: 11px 10px 0;
+    /*width: 155px !important;*/
+    width: 85%;
+    height: 24px;
     border-radius: 0;
     background: #fff;
 }
@@ -297,82 +333,32 @@ body {
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
-    /* Styles */
-    /*    .bankVideo-navbarItem{
-            line-height: 60px;
-        }
-        .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
-            min-height: 60px;
-        }
-        .bankVideo-navbar .navbar-brand {
-            height: 60px;
-        }*/
+
     .bankVideo-signUp{
         font-size: 14px;
         width: 100%;
     }
-    .menu li{
-        width: 100%;
-        float: none;
-        display: block;
-    }
-    .menu li a:hover{
-        background: #07b5b6;
-        color: #fff;
-    }
-    .menu li .dottedBorder{
-        border: none;
-    }
-    /*wrapper*/ 
+
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
-    /* Styles */
-    /*    .bankVideo-navbarItem{
-            line-height: 60px;
-        }
-        .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
-            min-height: 60px;
-        }
-        .bankVideo-navbar .navbar-brand {
-            height: 60px;
-        }*/
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-    /* Styles */
-    .menu li{
-        width: 100%;
-        float: none;
-        display: block;
-    }
-    .menu li a:hover{
-        background: #07b5b6;
-        color: #fff;
-    }
-    .menu li .dottedBorder{
-        border: none;
-    }
+
     .navbar-brand{
         width: 208px;
     }
 }
 
 @media (max-width: 767px)  {
-    .menu li{
-        width: 100%;
-        float: none;
-        display: block;
-    }
-    .menu li a:hover{
-        background: #07b5b6;
-        color: #fff;
-    }
-    .menu li .dottedBorder{
+
+     .dottedBorder{
         border: none;
     }
     .navbar-nav li .bankVideo-navbarItem {
@@ -410,39 +396,11 @@ and (max-width : 320px) {
         width: auto;
         margin: 10px 0;
     }
-    /*    .bankVideo-navbarItem{
-            line-height: 60px;
-        }
-        .bankVideo-navbar, .bankVideo-navbar .navbar-header, .bankVideo-navbar .navbar-collapse {
-            min-height: 60px;
-        }
-        .bankVideo-navbar .navbar-brand {
-            height: 60px;
-        }*/
-    /*    .navbar-brand {
-            padding: 7px 15px;
-        }*/
-    /*    .wrapper{
-            padding-top: 140px;
-        }*/
-    .menu li{
-        width: 100%;
-        float: none;
-        display: block;
-    }
-    .menu li a:hover{
-        background: #07b5b6;
-        color: #fff;
-    }
-    .menu li .dottedBorder{
+
+    .dottedBorder{
         border: none;
     }
-/*    .container{
-        width: 768px;
-    }*/
-    .navbar-header{
-        width: 205px;
-    }
+
 }
 @media (min-width: 992px) {
 
@@ -463,5 +421,30 @@ and (max-width : 320px) {
 
     .containerSmall{
         width: 915px;
+    }
+    .col-custom{
+        width: auto ;
+    }
+    .searchForm{
+        margin: 0 10px;
+    }
+    .searchInput{
+        width: 155px !important;
+    }
+}
+@media (min-width: 1920px) {
+    .searchForm{
+        margin: 0 10px;
+    }
+    .searchInput{
+        width: 155px !important;
+    }
+}
+@media (min-width: 2500px) {
+     .searchForm{
+        margin: 0 10px;
+    }
+    .searchInput{
+        width: 155px !important;
     }
 }
