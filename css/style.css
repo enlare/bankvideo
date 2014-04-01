@@ -388,7 +388,10 @@ body {
 
 .col-about-project{
     width: 25%;
-    padding: 5px;
+    padding: 0 5px;
+    font-size: 13px;
+    color: #333333;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 .col-about-project p{
@@ -396,9 +399,17 @@ body {
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     white-space: normal;
-    height: 300px;
+    height: 287px;
     width: 100%;
     display: inline-block;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.col-about-project h3, .newsBlock h3{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 .bottomBorder{
     border-bottom: 1px dotted #999;
@@ -406,12 +417,47 @@ body {
 }
 
 .newsBlock{
-    padding: 0;
-    width: 26%;
-    float: left
+    padding: 0 13px;
+    width: 28%;
+    float: left;
+
 }
 .newsPhoto{
-    width: 40%;
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+.newsItem{
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+.newsItemBordered{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.overflowNewsText{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: normal;
+    height: 38px;
+    /*width: 100%;*/
+    display: inline-block;
+    text-align: justify;
+    margin-bottom: 0;
+    padding: 0;
+    color: #333333;
+
+}
+.newsTextWrapper{
+    padding-left: 6px;
+    padding-right: 0;
+}
+.allNews{
+    font-size: 14px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #333;
 }
 .vkBlock, .fbBlock, .twBlock{
     float: left;
@@ -490,6 +536,10 @@ and (max-width : 320px) {
     }
     .greyVideoBlock{
         left: 10px;
+    }
+    .newsBlock,.vkBlock, .fbBlock, .twBlock{
+        width: 100%;
+        float: none;
     }
 }
 
