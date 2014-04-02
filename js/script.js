@@ -9,6 +9,6 @@ function resizeVideoWrapper()
 $(window).load(function() {
     resizeVideoWrapper();
 });
-$(window).resize(function() {
-    resizeVideoWrapper();
-});
+//$(window).resize(function() {
+//    resizeVideoWrapper();
+//});
