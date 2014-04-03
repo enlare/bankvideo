@@ -447,8 +447,8 @@ video{
 
 
 .col-about-project{
-    width: 24%;
-    padding: 0 5px;
+    width: 28%;
+    padding: 0 10px 0 10px;
     font-size: 13px;
     color: #333333;
     font-family:Arial, Helvetica, sans-serif;
@@ -477,7 +477,7 @@ video{
 }
 
 .col-contentOfDay{
-    width: 38%;
+    width: 36%;
     padding-right: 10px;
     padding-left: 5px;
 }
@@ -553,6 +553,7 @@ video{
 .newsTextWrapper{
     padding-left: 6px;
     padding-right: 0;
+    /*width:*/ 
 }
 .allNews{
     font-size: 14px;
@@ -571,32 +572,44 @@ video{
     font-size: 20px;
     margin-top: 0;
 }
-
+.newVideo{
+    padding-left: 7px;
+    padding-right: 7px;
+}
 .newVideo .itemDescription{
     font-family: 'Roboto';
-    font-size: 13px;
+    font-size: 14px;
+}
+.col-newVideoRow{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .arrowsWrapper{
     width: 50px;
     height: 25px;
 }
 .horizontalArrows{
-     width: 25px;
+    width: 25px;
     height: 25px;
     display: inline-block;
     float: left;
 }
 .leftArrow{
     background: url(img/left.png) 0 0 no-repeat;
-   
+
 }
 .rightArrow{
     background: url(img/right.png) 0 0 no-repeat;
 }
-.col-newVideo{
-    padding-left: 2px;
-    padding-right: 2px;
+.col-newVideo,.col-newVideoRow{
+    padding-left: 3px;
+    padding-right: 3px;
 }
+.col-newVideo .cyanHref{
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
