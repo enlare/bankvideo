@@ -619,11 +619,9 @@ video{
     width: 100%;
     /*max-width: 100*/
 }
-
-
-/* Smartphones (portrait) ----------- */
 @media only screen 
-and (max-width : 250px) {
+and (min-width : 240px)
+and (max-width: 320px){
     #footer, #push{
         height: 351px!important;
     }
@@ -631,10 +629,35 @@ and (max-width : 250px) {
         margin-bottom: -351px !important;
     }
     #footer .footerDark{
-        height: 221px !important;
+        height: 270px !important;
     }
     #footer  > .containerSmall{
-        height: 351px !important;
+        height: 363px !important;
+    }
+    .footerBottom div{
+        text-align: left;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (min-width : 240px)
+and (max-width: 320px)
+and (orientation:portrait){
+   #footer, #push{
+        height: 351px!important;
+    }
+    #wrap {
+        margin-bottom: -351px !important;
+    }
+    #footer .footerDark{
+        height: 270px !important;
+    }
+    #footer  > .containerSmall{
+        height: 363px !important;
+    }
+    .footerBottom div{
+        text-align: left;
     }
 }
 
