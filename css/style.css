@@ -883,16 +883,16 @@ and (max-width : 320px) {
 and (orientation:portrait)
 {
     #footer, #push{
-        height: 200px!important;
+        height: 240px!important;
     }
     #wrap {
-        margin-bottom: -200px !important;
+        margin-bottom: -240px !important;
     }
     #footer .footerDark{
-        height: 146px !important;
+        height: 140px !important;
     }
     #footer  > .containerSmall{
-        height: 250px !important;
+        height: 240px !important;
     }
     .footerBottom div{
         text-align: left;
