@@ -32,6 +32,12 @@ body {
     color: #fff;
     text-decoration: none;
 }
+hr{
+    margin-top: 2px;
+    margin-bottom: 7px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
 
 
 .navbar-inverse { background-color: #111111; font-family: 'Roboto';}
@@ -628,6 +634,9 @@ video{
     padding: 0 5px;
 }
 
+/*.profileMenu{
+    border-bottom: 1px solid #999;
+}*/
 
 .profileMenu a{
     color: #666;
@@ -644,7 +653,7 @@ video{
     color: #666;
     margin: 0 5px 0 0;
     padding: 0;
-    
+
 }
 .statusWrapper .activeStatus,
 .statusWrapper .activeStatus:active,
@@ -653,10 +662,97 @@ video{
 .statusWrapper .activeStatus:focus{
     color: #07b5b6;
 }
-.pageTitle{
+.profileLink{
     color: #07b5b6;
     font-size: 18px;
     padding: 0 5px 0 20px;
+    text-decoration: none;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    /*padding-right: 0;*/
+    /*padding-left: 0;*/
+}
+/*input type file*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.btn-cyan{
+    color: #fff;
+    background-color: #07b5b6;
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-cyan:hover,
+.btn-cyan:focus,
+.btn-cyan:active{
+    background-color: #06a2a3;
+    color: #fff;
+}
+.btn-uploadsPage{
+    font-size: 18px;
+    height: 60px;
+    line-height: 45px;
+}
+.filesCategory{
+    list-style: none;
+    padding: 0;
+}
+.filesCategory li{
+    display: block;
+    height: 25px;
+
+}
+.filesCategory li a{
+    color: #07b5b6;
+    display: inline-block;
+    padding: 0 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 28px;
+    height: 29px;
+    width: 100%;
+}
+
+.filesCategory li a.activeFilesCategory,
+.filesCategory li a:hover{
+    color: #fff;
+    background: #07b5b6;
+}
+.col-filesCategory{
+    padding-right: 0;
+}
+.col-filesCategory .pageTitle{
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.col-fileBtns{
+    padding-right: 0;
+    padding-left: 10px;
+    width: 32%;
 }
 
 @media only screen 
