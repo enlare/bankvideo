@@ -874,6 +874,9 @@ and (max-width : 320px) {
     .footerDark .noPaddingRight{
         padding-right: 15px !important;
     }
+     .footerBottom div{
+        text-align: left;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) 
