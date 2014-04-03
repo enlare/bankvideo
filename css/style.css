@@ -506,8 +506,8 @@ video{
 }*/
 
 .contentOfDayBig .contentOfDayOverlay{
-        left: 4px;
-        bottom: 3px;
+    left: 4px;
+    bottom: 3px;
     width: 65%;
     min-width: 100px;
 }
@@ -581,6 +581,7 @@ video{
 .newVideo{
     padding-left: 7px;
     padding-right: 7px;
+    margin-bottom: 10px;
 }
 .newVideo .itemDescription{
     font-family: 'Roboto';
@@ -589,6 +590,7 @@ video{
 .col-newVideoRow{
     padding-left: 10px;
     padding-right: 10px;
+
 }
 .arrowsWrapper{
     width: 50px;
@@ -619,6 +621,44 @@ video{
     width: 100%;
     /*max-width: 100*/
 }
+
+.col-customMenu{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+
+
+.profileMenu a{
+    color: #666;
+    padding: 0 3px;
+    font-size: 16px;
+}
+.statusWrapper span,
+.statusWrapper a{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    float: none;
+    width: auto;
+    color: #666;
+    margin: 0 5px 0 0;
+    padding: 0;
+    
+}
+.statusWrapper .activeStatus,
+.statusWrapper .activeStatus:active,
+.statusWrapper .activeStatus:hover,
+.statusWrapper .activeStatus:visited,
+.statusWrapper .activeStatus:focus{
+    color: #07b5b6;
+}
+.pageTitle{
+    color: #07b5b6;
+    font-size: 18px;
+    padding: 0 5px 0 20px;
+}
+
 @media only screen 
 and (min-width : 240px)
 and (max-width: 320px){
@@ -644,7 +684,7 @@ and (max-width: 320px){
 and (min-width : 240px)
 and (max-width: 320px)
 and (orientation:portrait){
-   #footer, #push{
+    #footer, #push{
         height: 351px!important;
     }
     #wrap {
@@ -874,7 +914,7 @@ and (max-width : 320px) {
     .footerDark .noPaddingRight{
         padding-right: 15px !important;
     }
-     .footerBottom div{
+    .footerBottom div{
         text-align: left;
     }
 }
@@ -934,7 +974,8 @@ and (orientation:portrait)
     .containerSmall{
         width: 915px;
     }
-    .col-custom{
+    .col-custom,.col-customMenu{
+
         width: auto ;
     }
     .searchForm{
@@ -949,14 +990,16 @@ and (orientation:portrait)
     }
 }
 @media (min-width: 1920px) {
-    /*    .searchForm{
-            margin: 0 10px;
-        }*/
+
     .searchInput{
         width: 155px !important;
     }
     .signupWrapper{
         margin-right: 25px;
+    }
+    .col-custom,.col-customMenu{
+
+        width: auto ;
     }
 }
 @media (min-width: 2500px) {
@@ -969,5 +1012,9 @@ and (orientation:portrait)
     }
     .signupWrapper{
         margin-right: 25px;
+    }
+    .col-custom,.col-customMenu{
+
+        width: auto ;
     }
 }

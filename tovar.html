@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+        <title>Bank video</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <!-- Part 1: Wrap all page content here -->
+        <div id="wrap">
+            <header class="navbar navbar-inverse navbar-fixed-top bankvideo-navbar " >
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="./" class="navbar-brand">  
+                            <img src="css/img/logo.png" class="logo" alt=""/>
+                        </a>
+                    </div>
+                    <nav class="collapse navbar-collapse " role="navigation">
+                        <ul class="nav navbar-nav ">
+                            <li>
+                                <a href="tel:+7(495)1009090" class="bankVideo-navbarItem">
+                                    +7 (495) 100 - 90 - 90
+                                </a>
+                            </li>
+
+                            <li class="basketWrapper">
+                                <a href="/basket" class="bankVideo-navbarItem ">
+                                    <span class="left bankVideo-basket">Ваша корзина</span>
+                                    <span class="left bankVideo-basketCount">
+                                        Кол-во: 199 шт.
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="signupWrapper">
+                                <div class="bankVideo-navbarItem">
+                                    <a href="#" class="bankVideo-signUp">Регистрация</a>
+                                    /
+                                    <a href="#" class="bankVideo-signUp">Вход</a>
+                                </div>
+                            </li>
+                            <li class="dropdown ">
+                                <div class="chooseLang">Выбор языка</div>
+                                <a href="#" class="dropdown-toggle bankVideo-langDropdown" data-toggle="dropdown"> 
+                                    Русский 
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Русский</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="containerSmall wrapper">
+                <div class="menuBlocks clearfix">
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#" class="videoLink">
+                            Видео    
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#" class="photoLink">
+                            Фото
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#" >
+                            <span class="dottedBorder">Купить на Bank Video</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            <span class="dottedBorder">Для покупателей</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            <span class="dottedBorder">Для авторов</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            <span class="dottedBorder">Правила</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            О Bank Video
+                        </a>
+                    </div>
+
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12 pull-right" >
+                        <form role="search" class="searchForm">
+                            <input type="text" class="input-sm searchInput pull-left" placeholder="Поиск">
+                            <button type="submit" class="searchBtn pull-left"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 col-video">
+
+                        <div class="videoWrapper">  
+                            <video controls preload="auto" class="resizedVideo" > 
+                                <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                            </video> 
+
+                            <div class="greyVideoBlock">
+                                <div class="col-md-12">
+                                    <span>Freedom (316m)</span>
+                                    <a href="#" class="cyanHref">Купить</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <span>Автор:</span>
+                                    <a href="#" class="cyanHref">Автор</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <a href="#" class="showAll">Посмотреть все работы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 sliderWrapper">
+                        <a href="#" class="bankVideoArrow topArrow"></a>
+                        <div class="sliderListWrapper">
+                            <ul class="slider">
+                                <li>
+                                    <div class="videoWrapper">  
+                                        <video controls preload="auto" class="resizedVideo" > 
+                                           <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                                        </video> 
+
+                                        <div class="sliderOverlay">
+                                            <div >
+                                                Freedom (316m)
+                                            </div>
+                                            <div >
+                                                <span>Автор:</span>
+                                                <a href="#" class="cyanHref">Автор</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="videoWrapper">  
+                                        <video controls preload="auto" class="resizedVideo" > 
+                                           <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                                        </video> 
+
+                                        <div class="sliderOverlay">
+                                            <div >
+                                                Freedom (316m)
+                                            </div>
+                                            <div >
+                                                <span>Автор:</span>
+                                                <a href="#" class="cyanHref">Автор</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="videoWrapper">  
+                                        <video controls preload="auto" class="resizedVideo" > 
+                                          <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                                        </video> 
+
+                                        <div class="sliderOverlay">
+                                            <div >
+                                                Freedom (316m)
+                                            </div>
+                                            <div >
+                                                <span>Автор:</span>
+                                                <a href="#" class="cyanHref">Автор</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="bankVideoArrow bottomArrow"></a>
+                    </div>
+                </div>
+                <div class="clearfix bottomBorder">
+                    <div class="col-about-project col-sm-4 col-xs-12">
+                        <h3>О проекте</h3>
+                        <p>
+                            Далеко-далеко за словесными горами в стране гласных и 
+                            согласных живут рыбные тексты. Вдали от всех живут они
+                            в буквенных домах на берегу Семантика большого языкового
+                            океана. Маленький ручеек Даль журчит по всей стране и
+                            обеспечивает ее всеми необходимыми правилами. 
+                            Эта парадигматическая страна, в которой жаренные члены 
+                            предложения залетают прямо в рот. Даже всемогущая пунктуация
+                            не имеет власти над рыбными текстами, ведущими 
+                            безорфографичный образ жизни. Однажды одна маленькая 
+                            строчка рыбного текста по имени Lorem ipsum решила выйти 
+                            в большой мир грамматики. Великий Оксмокс предупреждал 
+                            ее о злых запятых, диких знаках вопроса и коварных точках 
+                            с запятой, но текст не дал сбить себя с толку. Он собрал 
+                            семь своих заглавных букв, подпоясал инициал за пояс и 
+                            пустился в дорогу. Взобравшись на первую вершину курсивных
+                            гор, бросил он последний взгляд назад, на силуэт 
+                            своего родного города Буквоград, на заголовок деревни 
+                            Алфавит и на подзаголовок своего переулка Строчка.
+                            Грустный реторический вопрос скатился по его щеке и 
+                            он продолжил свой путь. По дороге встретил текст рукопись.
+                            Она предупредила его: «В моей стране все переписывается 
+                            по несколько раз. Единственное, что от меня осталось, 
+                            это приставка «и». Возвращайся ты лучше в свою безопасную
+                            страну». Не послушавшись рукописи, наш текст продолжил 
+                            свой путь. Вскоре ему повстречался коварный составитель
+
+                        </p>
+                        <a href="#" class="cyanHref readMore">Подробнее...</a>
+                    </div>
+                    <div class="col-contentOfDay col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                        <h3>
+                            Контент дня
+                            <a href="#">Фото</a>
+                            <a href="#" class="activeFilter">Видео</a>
+                        </h3> 
+                        <div>
+                            <div class="contentOfDayBig text-center">
+                                <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                <div class="contentOfDayOverlay">
+                                    <div>
+                                        <span>Freedom (316m)</span>
+                                    </div>
+                                    <div>
+                                        <span>Автор:</span>
+                                        <a href="#" class="cyanHref">Автор</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left contentOfDaySmall">
+                                    <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="pull-left contentOfDaySmall ">
+                                    <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="pull-left contentOfDaySmall">
+                                    <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-contentOfDay col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                        <h3>
+                            Автор недели
+                            <a href="#" class="activeFilter"> Фото</a>
+                            <a href="#" >Видео</a>
+                        </h3> 
+                        <div>
+                            <div class="contentOfDayBig">
+                                <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                <div class="contentOfDayOverlay">
+                                    <div>
+                                        <span>Freedom (316m)</span>
+                                    </div>
+                                    <div>
+                                        <span>Автор:</span>
+                                        <a href="#" class="cyanHref">Автор</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="pull-left contentOfDaySmall">
+                                    <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="pull-left contentOfDaySmall">
+                                    <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="pull-left contentOfDaySmall">
+                                    <img src="css/img/slider.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix newVideo">
+                    <div class="col-newVideoRow col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h3 class="pull-left">Новые видео</h3>
+                        <div class="pull-right arrowsWrapper">
+                            <a href="#" class="horizontalArrows leftArrow"></a>
+                            <a href="#" class="horizontalArrows rightArrow"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <video controls preload="auto" > 
+                               <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                            </video> 
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <video controls preload="auto" > 
+                                <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                            </video> 
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <video controls preload="auto" > 
+                                <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                            </video> 
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <video controls preload="auto" > 
+                                <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+                                <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+                                <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                                <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+                                Your browser does not support the video tag.
+                            </video> 
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="clearfix newVideo">
+                    <div class="col-newVideoRow col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h3 class="pull-left">Новые видео</h3>
+                        <div class="pull-right arrowsWrapper">
+                            <a href="#" class="horizontalArrows leftArrow"></a>
+                            <a href="#" class="horizontalArrows rightArrow"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix bottomBorder">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <a href="#" class="newPhotoHref ">
+                                <img src="css/img/slider.jpg" class="img-responsive">
+                            </a>
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <a href="#" class="newPhotoHref ">
+                                <img src="css/img/slider.jpg" class="img-responsive">
+                            </a>
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <a href="#" class="newPhotoHref ">
+                                <img src="css/img/slider.jpg" class="img-responsive">
+                            </a>
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-newVideo">
+                            <a href="#" class="newPhotoHref ">
+                                <img src="css/img/slider.jpg" class="img-responsive">
+                            </a>
+                            <div class="itemDescription">
+                                <div class="itemName">Название</div>
+                                <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix newsWrapper">
+                    <div class="newsBlock">
+                        <h3>Новости проекта</h3>
+                        <div  class="newsItem newsItemBordered clearfix">
+                            <a class="newsPhoto pull-left" href="#">
+                                <img class="media-object img-responsive" src="css/img/news.jpg" alt="...">
+                            </a>
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 newsTextWrapper">
+                                <div class="overflowNewsText">
+                                    по несколько раз. Единственное, что от меня осталось, 
+                                    это приставка «и». Возвращайся ты лучше в свою безопасную
+                                    страну». Не послушавшись рукописи, наш текст продолжил 
+                                    свой путь. Вскоре ему повстречался коварный составитель
+                                </div>
+                                <a href="#" class="cyanHref">Подробнее..</a>
+                            </div>
+                        </div>
+                        <div  class="newsItem newsItemBordered clearfix">
+                            <a class="newsPhoto pull-left" href="#">
+                                <img class="media-object img-responsive" src="css/img/news.jpg" alt="...">
+                            </a>
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 newsTextWrapper">
+                                <div class="overflowNewsText">
+                                    по несколько раз. Единственное, что от меня осталось, 
+                                    это приставка «и». Возвращайся ты лучше в свою безопасную
+                                    страну». Не послушавшись рукописи, наш текст продолжил 
+                                    свой путь. Вскоре ему повстречался коварный составитель
+                                </div>
+                                <a href="#" class="cyanHref">Подробнее..</a>
+                            </div>
+                        </div>
+                        <div  class="newsItem clearfix">
+                            <a class="newsPhoto pull-left" href="#">
+                                <img class="media-object img-responsive" src="css/img/news.jpg" alt="...">
+                            </a>
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 newsTextWrapper">
+                                <div class="overflowNewsText">
+                                    по несколько раз. Единственное, что от меня осталось, 
+                                    это приставка «и». Возвращайся ты лучше в свою безопасную
+                                    страну». Не послушавшись рукописи, наш текст продолжил 
+                                    свой путь. Вскоре ему повстречался коварный составитель
+                                </div>
+                                <a href="#" class="cyanHref">Подробнее..</a>
+                            </div>
+                        </div>
+                        <a href="#" class="allNews">Все новости</a>
+
+                    </div>
+                    <div class="vkBlock">
+                        <h3>VK.com</h3>
+                        <img src="css/img/vk.jpg" alt="">
+                    </div>
+                    <div class="fbBlock">
+                        <h3>Facebook</h3>
+                        <img src="css/img/fb.jpg" alt="">
+                    </div>
+                    <div class="twBlock">
+                        <h3>Twitter</h3>
+                        <img src="css/img/tw.jpg" alt="">
+                    </div>
+                </div>
+                <div id="push"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="containerSmall">
+                <div class="footerDark">
+                    <div class="col-lg-9 col-md-9 col-xs-12 noPaddingRight">
+                        <div>Мы принимаем к оплате:</div>
+                        <div class="paymentLinksWrapper left">
+                            <a href="#" class="left paymentLinks visaLink"></a>
+                            <a href="#" class="left paymentLinks qiwiLink"></a>
+                            <a href="#" class="left paymentLinks yaLink"></a>
+                            <a href="#" class="left paymentLinks beeLink"></a>
+                            <a href="#" class="left paymentLinks megafonLink"></a>
+                            <a href="#" class="left paymentLinks mtsLink"></a>
+                            <a href="#" class="right assistLink"></a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div>Социальные закладки:</div>
+                        <div class="socialLinksWrapper">
+                            <a href="#" class="left socialLinks fbLink"></a>
+                            <a href="#" class="left socialLinks twLink"></a>
+                            <a href="#" class="left socialLinks vkLink"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerBottom">
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <a href="/">
+                            www.bankvideo.com &COPY; 2014   
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                        Техподдержка: 
+                        <a href="mailto:sd@bankvideo.com">
+                            sd@bankvideo.com
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 text-right">
+                        Разработка:
+                        <a href="/">
+                            Red Homet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
