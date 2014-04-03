@@ -686,6 +686,9 @@ and (max-width : 480px) {
     #footer  > .containerSmall{
         height: 310px!important;
     }
+    .footerBottom div{
+        text-align: left;
+    }
 
 }
 
@@ -721,6 +724,9 @@ and (max-width : 320px) {
             padding-left: 5px;
             padding-right: 5px;
         }*/
+    .footerBottom div{
+        text-align: left;
+    }
 }
 
 @media (max-width: 767px)  {
@@ -805,6 +811,9 @@ and (max-width : 320px) {
     }
     .footerDark .noPaddingRight{
         padding-right: 15px !important;
+    }
+    .footerBottom div{
+        text-align: left;
     }
 
 }
