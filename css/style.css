@@ -127,7 +127,6 @@ hr{
     margin-top: 13px;
 }
 
-
 .logo{
     display: inline-block;
     width: 100%;
@@ -175,7 +174,6 @@ hr{
     padding-left: 20px;
     background: url(img/user.png) center left no-repeat;
     font-size: 13px;
-    /*line-height: 14px;*/
 }
 .bankVideo-navbarItem .userNickname:hover{
     color: #07b5b6!important;
@@ -188,8 +186,6 @@ hr{
     color: #fff!important;
 }
 .bankVideo-basket{
-    /*background: url(img/basket.png) top right no-repeat;*/
-    /*padding: 0 25px 0 0 ;*/
     margin: 0 5px 0 0;
 }
 .bankVideo-basket img{
@@ -321,40 +317,15 @@ hr{
     font-size: 14px;
 }
 
-
-/*.videoWrapper{
-    position: relative;
-    padding: 6px 0 0 0;
-}*/
 video{
     width: 100%    !important;
     height: auto   !important;
     z-index: 1000!important;
-    /*outline: 1px solid red;*/
 }
 .videoWrapper {
     position: relative;
-    /*padding-bottom: 56.25%;  16:9 */
-    /*padding-top: 25px;*/
-    /*height: 0;*/
     z-index: 1000!important;
-    /*outline: 1px solid blue;*/
-    /*height: auto!important;*/
-    /*top:0;*/
 }
-/*.videoWrapper iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000!important;
-}*/
-/*.videoWrapper video{
-    position: absolute;
-    top: 0;
-}*/
-
 
 
 .greyVideoBlock, 
@@ -398,9 +369,7 @@ video{
     text-align: center;
     padding: 4px 8px 0 8px;
 }
-.sliderListWrapper{
-    /*padding: 0 10px 0 7px;*/
-}
+
 .sliderListWrapper ul{
     list-style: none;
     padding: 0;
@@ -410,12 +379,8 @@ video{
     display: block;
     position: relative;
     margin: 0 auto 4px auto;
-    /*height: 120px;*/
 }
-/*.sliderListWrapper ul li a {
-    display: inline-block;
-    width: 100%;
-}*/
+
 .sliderListWrapper ul li .sliderOverlay{
     background: #666;
     color: #fff;
@@ -435,7 +400,6 @@ video{
 }
 .sliderListWrapper ul li .sliderOverlay span,
 .sliderListWrapper ul li .sliderOverlay a{
-    /*margin: 0 5px 5px 5px;*/
     float: left;
     display: inline-block;
 }
@@ -446,8 +410,6 @@ video{
     width: 100%;
     height: auto;
     display: block;
-    /*height: 120px;*/
-    /*width: auto;*/
 }
 .sliderWrapper ul li .sliderOverlay .cyanHref{
     font-size: 14px;
@@ -523,9 +485,6 @@ video{
     padding: 0 3px;
     display: block;
 }
-/*.padding-contentOfDay{
-    margin: 0 3px;
-}*/
 
 .contentOfDayBig .contentOfDayOverlay{
     left: 4px;
@@ -570,7 +529,6 @@ video{
     -o-text-overflow: ellipsis;
     white-space: normal;
     height: 38px;
-    /*width: 100%;*/
     display: inline-block;
     text-align: justify;
     margin-bottom: 0;
@@ -581,12 +539,10 @@ video{
 .newsTextWrapper{
     padding-left: 6px;
     padding-right: 0;
-    /*width:*/ 
 }
 .allNews{
     font-size: 14px;
     font-family: 'Roboto';
-    /*font-family: 'Ubuntu Condensed', sans-serif;*/
     color: #333;
 }
 .vkBlock, .fbBlock, .twBlock{
@@ -641,7 +597,6 @@ video{
 }
 .newPhotoHref{
     width: 100%;
-    /*max-width: 100*/
 }
 
 .col-customMenu{
@@ -649,10 +604,6 @@ video{
     line-height: 30px;
     padding: 0 5px;
 }
-
-/*.profileMenu{
-    border-bottom: 1px solid #999;
-}*/
 
 .profileMenu a,
 .profileMenu a:hover{
@@ -675,7 +626,6 @@ video{
     width: auto;
     color: #a3a3a3;
     margin: 0 5px 0 0;
-    /*padding: 0;*/
     padding: 0 3px;
 
 }
@@ -700,7 +650,7 @@ video{
     text-decoration: none;
 }
 .profileMenu-Cart .pageSubtitle{
-    color: #666 !important;
+    color: #333 !important;
 }
 .seller{
     background: #07b5b6 !important;
@@ -711,8 +661,6 @@ video{
 .btn-block {
     display: block;
     width: 100%;
-    /*padding-right: 0;*/
-    /*padding-left: 0;*/
 }
 /*input type file*/
 .btn-file {
@@ -797,9 +745,6 @@ video{
 .filesAmount{
     font-size: 18px;
     text-align: center;
-    /*    width: 50px;
-        word-break: normal;
-        word-spacing: normal;*/
     font-family: 'Roboto';
 }
 
@@ -870,8 +815,6 @@ video{
     border-bottom: 2px solid #ddd;
     font-size: 14px;
     font-family: 'Roboto';
-    /*border-left: 2px solid #ddd;*/
-    /*border-right: 2px solid #ddd;*/
 }
 
 .table-uploads > thead > tr > th,
@@ -889,11 +832,9 @@ video{
     border: none;
     border-bottom: 2px solid #ddd;
     color: #000;
-    /*font-family: 'Roboto';*/
     font-weight: normal;
     text-align: center;
     padding-bottom: 0;
-    /*font-family: 'Roboto';*/
 }
 .table-uploads > thead > tr > td,
 .table-uploads > tbody > tr > td,
@@ -933,21 +874,29 @@ video{
     width: 100%;
 }
 .editFileForm .form-group{
-   margin-right: 0;
-   margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 10px;
 }
-.editFileForm label{
-    text-align: left!important;
-    padding: 0;
-    font-weight: normal;
-    color: #666;
-    font-size: 16px;
+.col-editFile{
+    width: 36%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-filePreview{
+    width: 64%;
 }
 .editFileForm .control-label{
-    padding: 0;
+    text-align: left!important;
+    padding: 0 0 0 10px;
+    font-weight: normal;
+    color: #333;
+    font-size: 16px;
 }
 .editFileForm #agreementCheckbox{
     margin-left: 0;
+    color: #404040;
+    font-weight: normal;
 }
 .editFileForm .checkboxWrapper,
 .editFileForm .redText
@@ -958,9 +907,24 @@ video{
 .editFileForm #fileTags{
     width: 100%;
     border-radius: 0;
+    margin-top: 5px;
 }
 .redText{
     color: #cc0000;
+}
+.noPaddingLeft{
+    padding-left: 0;
+}
+.editFileWrapper{
+    padding-top: 10px;
+}
+.col-select{
+    width: 45%;
+    float: left;
+    margin: 0 5px;
+}
+.selectRow{
+    margin-bottom: 10px;
 }
 
 
@@ -1065,10 +1029,7 @@ and (max-width : 320px) {
     #footer  > .containerSmall{
         height: 320px !important;
     }
-    /*    .footerBottom div{
-            padding-left: 5px;
-            padding-right: 5px;
-        }*/
+
     .footerBottom div{
         text-align: left;
     }
@@ -1172,30 +1133,36 @@ and (max-width : 320px) {
     {
         width: 100% !important;
     }
-    .responsiveBefore768 .containerSmall{
-        /*width: 768px;*/
-    }
-    /*    .responsiveBefore768 .collapse{
-            display: block;
-            visibility: visible;
-        }*/
+
     .col-fileBtns{
         width: 50%;
         padding-left: 20px;
         padding-right: 20px;
         font-size: 16px;
     }
+    .editFileForm .control-label {
+        margin-left: 10px;
+    }
+    .col-editFile,
+    .col-filePreview{
+        width: 100%;
+    }
+    .pageSubtitle{
+        padding-left: 5px;
+    }
+    .editFileForm .form-group{
+        padding-left: 0;
+    }
+    .editFileForm .control-label{
+        padding-left: 0px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .bankVideo-signUp{
         font-size: 14px;
     }
-    /*    .chooseLang{
-        width: auto;
-        margin: 10px 0;
-        }*/
-
     .dottedBorder{
         border: none;
     }
