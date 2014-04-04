@@ -671,11 +671,11 @@ video{
     color: #666;
     margin: 0 5px 0 0;
     /*padding: 0;*/
-     padding: 0 3px;
+    padding: 0 3px;
 
 }
 .statusWrapper a:hover{
-     color: #07b5b6;
+    color: #07b5b6;
 }
 .statusWrapper .activeStatus,
 .statusWrapper .activeStatus:active,
@@ -690,6 +690,11 @@ video{
     font-size: 18px;
     padding: 0 5px 0 20px;
     text-decoration: none;
+}
+ .seller{
+    background: #07b5b6 !important;
+    color: #fff;
+    padding: 0px 15px 2px 15px;
 }
 
 .btn-block {
@@ -1116,16 +1121,16 @@ and (max-width : 320px) {
         min-width: 767px;
     }
     .responsiveBefore768 .container
-   {
-       width: 100% !important;
+    {
+        width: 100% !important;
     }
     .responsiveBefore768 .containerSmall{
         /*width: 768px;*/
     }
-/*    .responsiveBefore768 .collapse{
-        display: block;
-        visibility: visible;
-    }*/
+    /*    .responsiveBefore768 .collapse{
+            display: block;
+            visibility: visible;
+        }*/
     .col-fileBtns{
         width: 50%;
         padding-left: 20px;
