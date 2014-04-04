@@ -171,6 +171,22 @@ hr{
 .bankVideo-signUp{
     font-size: 18px;
 }
+.bankVideo-navbarItem .userNickname{
+    padding-left: 20px;
+    background: url(img/user.png) center left no-repeat;
+    font-size: 13px;
+    /*line-height: 14px;*/
+}
+.bankVideo-navbarItem .userNickname:hover{
+    color: #07b5b6!important;
+}
+.bankVideo-navbarItem .logoutHref{
+    color: #07b5b6 !important;
+    font-size: 14px;
+}
+.bankVideo-navbarItem .logoutHref:hover{
+    color: #fff!important;
+}
 .bankVideo-basket{
     /*background: url(img/basket.png) top right no-repeat;*/
     /*padding: 0 25px 0 0 ;*/
@@ -638,10 +654,12 @@ video{
     border-bottom: 1px solid #999;
 }*/
 
-.profileMenu a{
+.profileMenu a,
+.profileMenu a:hover{
     color: #666;
     padding: 0 3px;
     font-size: 16px;
+    text-decoration: none;
 }
 .statusWrapper span,
 .statusWrapper a{
@@ -652,8 +670,12 @@ video{
     width: auto;
     color: #666;
     margin: 0 5px 0 0;
-    padding: 0;
+    /*padding: 0;*/
+     padding: 0 3px;
 
+}
+.statusWrapper a:hover{
+     color: #07b5b6;
 }
 .statusWrapper .activeStatus,
 .statusWrapper .activeStatus:active,
@@ -662,8 +684,9 @@ video{
 .statusWrapper .activeStatus:focus{
     color: #07b5b6;
 }
-.profileLink{
-    color: #07b5b6;
+.profileLink,
+.profileLink:hover{
+    color: #07b5b6!important;
     font-size: 18px;
     padding: 0 5px 0 20px;
     text-decoration: none;
@@ -830,7 +853,7 @@ video{
     border: none;
     border-bottom: 2px solid #ddd;
     font-size: 14px;
-     font-family: 'Roboto';
+    font-family: 'Roboto';
     /*border-left: 2px solid #ddd;*/
     /*border-right: 2px solid #ddd;*/
 }
@@ -852,17 +875,17 @@ video{
     color: #000;
     /*font-family: 'Roboto';*/
     font-weight: normal;
-     text-align: center;
-     padding-bottom: 0;
-       /*font-family: 'Roboto';*/
+    text-align: center;
+    padding-bottom: 0;
+    /*font-family: 'Roboto';*/
 }
 .table-uploads > thead > tr > td,
 .table-uploads > tbody > tr > td,
 .table-uploads > tfoot > tr > td {
     border: 2px solid #ddd;
     padding: 5px;
-     text-align: center;
-/*       font-family: 'Roboto';*/
+    text-align: center;
+    /*       font-family: 'Roboto';*/
 }
 .contentCell{
     max-width: 150px;
@@ -881,13 +904,11 @@ video{
     padding-right: 20px;
 }
 .table-uploads a{
-      font-family: 'Roboto';
+    font-family: 'Roboto';
 }
 
 
-.responsiveBefore768{
-    min-width: 767px;
-}
+
 
 
 @media only screen 
@@ -1029,7 +1050,10 @@ and (max-width : 320px) {
     .dropdown{
         text-align: left;
     }
-    .bankVideo-signUp{
+    .bankVideo-signUp,
+    .bankVideo-navbarItem .userNickname,
+    .bankVideo-navbarItem .logoutHref
+    {
         font-size: 14px;
         width: 100%;
     }
@@ -1038,8 +1062,8 @@ and (max-width : 320px) {
     }
     .signupWrapper{
         margin-right: 0px;
+        height: 30px;
     }
-
 
     /*    .greyVideoBlock{
             left: 10px;
@@ -1087,6 +1111,27 @@ and (max-width : 320px) {
         text-align: left;
     }
 
+
+    .responsiveBefore768{
+        min-width: 767px;
+    }
+    .responsiveBefore768 .container
+   {
+       width: 100% !important;
+    }
+    .responsiveBefore768 .containerSmall{
+        /*width: 768px;*/
+    }
+/*    .responsiveBefore768 .collapse{
+        display: block;
+        visibility: visible;
+    }*/
+    .col-fileBtns{
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
