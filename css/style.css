@@ -741,6 +741,7 @@ video{
 }
 .col-filesCategory{
     padding-right: 0;
+    padding-left: 20px;
 }
 .col-filesCategory .pageTitle{
     margin: 0 0 10px 0;
@@ -754,6 +755,140 @@ video{
     padding-left: 10px;
     width: 32%;
 }
+.filesAmount{
+    font-size: 18px;
+    text-align: center;
+    /*    width: 50px;
+        word-break: normal;
+        word-spacing: normal;*/
+    font-family: 'Roboto';
+}
+
+.paginationRow{
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.bankVideo-pagination {
+    margin: 0;
+    border-radius: 0px;
+}
+.bankVideo-pagination > li > a,
+.bankVideo-pagination > li > span {
+    padding: 6px 4px;
+    color: #333;
+    font-family: 'Roboto';
+    background-color: transparent;
+    border: none;
+}
+
+.bankVideo-pagination > li > a:hover,
+.bankVideo-pagination > li > span:hover,
+.bankVideo-pagination > li > a:focus,
+.bankVideo-pagination > li > span:focus {
+    color: #07bcb5;
+    background-color: transparent;
+}
+.bankVideo-pagination > .active > a,
+.bankVideo-pagination > .active > span,
+.bankVideo-pagination > .active > a:hover,
+.bankVideo-pagination > .active > span:hover,
+.bankVideo-pagination > .active > a:focus,
+.bankVideo-pagination > .active > span:focus {
+    color: #07bcb5;
+    background-color: transparent;
+}
+.bankVideo-pagination > .disabled > span,
+.bankVideo-pagination > .disabled > span:hover,
+.bankVideo-pagination > .disabled > span:focus,
+.bankVideo-pagination > .disabled > a,
+.bankVideo-pagination > .disabled > a:hover,
+.bankVideo-pagination > .disabled > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+
+
+.tableFilter{
+    height: 35px;
+    line-height: 35px;
+    color: #333;
+    text-align: right;
+}
+.tableFilter a{
+    color: #333;
+    text-decoration: none;
+}
+.tableFilter a:hover{
+    color: #07b5b6;
+}
+.tableFilter .activePageFilter{
+    color: #07b5b6;
+}
+
+.table-uploads {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 14px;
+     font-family: 'Roboto';
+    /*border-left: 2px solid #ddd;*/
+    /*border-right: 2px solid #ddd;*/
+}
+
+.table-uploads > thead > tr > th,
+.table-uploads > tbody > tr > th,
+.table-uploads > tfoot > tr > th,
+.table-uploads > thead > tr > td,
+.table-uploads > tbody > tr > td,
+.table-uploads > tfoot > tr > td {
+    border-top: 1px solid #ddd;
+}
+
+.table-uploads > thead > tr > th,
+.table-uploads > tbody > tr > th,
+.table-uploads > tfoot > tr > th{
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #000;
+    /*font-family: 'Roboto';*/
+    font-weight: normal;
+     text-align: center;
+     padding-bottom: 0;
+       /*font-family: 'Roboto';*/
+}
+.table-uploads > thead > tr > td,
+.table-uploads > tbody > tr > td,
+.table-uploads > tfoot > tr > td {
+    border: 2px solid #ddd;
+    padding: 5px;
+     text-align: center;
+/*       font-family: 'Roboto';*/
+}
+.contentCell{
+    max-width: 150px;
+}
+.checkboxCell,.pkCell{
+    max-width: 40px;
+}
+.statusCell{
+    max-width: 80px;
+}
+.deleteCell{
+    max-width: 100px;
+}
+.tableWrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.table-uploads a{
+      font-family: 'Roboto';
+}
+
+
+.responsiveBefore768{
+    min-width: 767px;
+}
+
 
 @media only screen 
 and (min-width : 240px)

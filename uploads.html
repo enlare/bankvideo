@@ -182,12 +182,97 @@
                             Редактировать выделенный файл
                         </button>
                     </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 filesAmount">
+                        <!--<span class="filesAmount">-->
+                        У вас <br/>123 файла
+                        <!--</span>-->
+                    </div>
                 </div>
 
-                <div class="clearfix">
+                <div class="clearfix paginationRow">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                        <ul class="pagination bankVideo-pagination pull-left">
+
+                            <!--                    
+                            в макете не было стрелок, но какая пагинация без стрелок
+                            
+                            <li class="disabled"><a href="#">&laquo;</a></li>-->
+                            <li class="active">
+                                <a href="#">
+                                    1 
+                                </a>
+                            </li>
+                            <li >
+                                <a href="#">
+                                    2 
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#" >
+                                    ...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    100 
+                                </a>
+                            </li>
+                            <!--<li class="disabled"><a href="#">&raquo;</a></li>-->
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  tableFilter">
+                        Смотреть по  
+                        <a href="#">10</a> . 
+                        <a href="#" class="activePageFilter">20</a> .
+                        <a href="#">30</a> на странице
+                    </div>
+                </div>
+                <div class="clearfix tableWrapper">
+                    <table class="table table-bordered table-uploads">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Изображение</th>
+                                <th>Имя файла</th>
+                                <th>Статус</th>
+                                <th>Релиз</th>
+
+                                <th>п/к</th>
+                                <th>Цена</th>
+                                <th>Дата загрузки</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkboxCell">
+                                    <input type="checkbox" value="" >
+                                </td>
+                                <td class="contentCell">
+                                    <img src="css/img/slider.jpg" alt="slider.jpg" class="img-responsive">
+                                </td>
+                                <td>
+                                    Моя фотография.jpg
+                                </td>
+                                <td class="statusCell"> 
+                                    Активен
+                                </td>
+                                <td>Отсутствует</td>
+                                <td class="pkCell">5/0</td>
+                                <td>1234 руб.</td>
+                                <td>03.04.2014</td>
+                                <td class="deleteCell">
+                                    <a href="#" class="cyanHref">Удалить</a>
+                                </td>
+
+
+                            </tr>
+
+                        </tbody>
+                    </table>
 
                 </div>
-
                 <div id="push"></div>
             </div>
         </div>
