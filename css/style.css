@@ -612,9 +612,17 @@ video{
     font-size: 16px;
     text-decoration: none;
 }
-.profileMenu-Cart a,
-.profileMenu-Cart a:hover{
+.profileMenu-CartShow div{
+    height: 33px;
+    line-height: 35px;
+}
+.profileMenu-CartShow a,
+.profileMenu-CartShow a:hover{
     color: #07b5b6;
+}
+.profileMenu-CartShow .goodsAmount{
+    text-align: left;
+    color: #8f8f8f;
 }
 
 .profileMenu .statusWrapper span,
@@ -651,6 +659,13 @@ video{
 }
 .profileMenu-Cart .pageSubtitle{
     color: #333 !important;
+}
+.profileMenu-Cart .col-linkToProfile a{
+    float: right;
+    color: #07b5b6!important;
+    font-size: 18px;
+    padding: 0 5px 0 15px;
+    text-decoration: none;
 }
 .seller{
     background: #07b5b6 !important;
@@ -1156,6 +1171,15 @@ and (max-width : 320px) {
     .editFileForm .control-label{
         padding-left: 0px;
     }
+
+    .profileMenu-CartShow .col-linkToProfile a{
+        float: none;
+    }
+    .profileMenu-CartShow .goodsAmount{
+        text-align: left;
+
+    }
+
 
 }
 

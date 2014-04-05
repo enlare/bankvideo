@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+        <title>Bank video</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link  href="css/bootstrap-select.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <!-- Part 1: Wrap all page content here -->
+        <div id="wrap">
+            <header class="navbar navbar-inverse navbar-fixed-top bankvideo-navbar " >
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="./" class="navbar-brand">  
+                            <img src="css/img/logo.png" class="logo" alt=""/>
+                        </a>
+                    </div>
+                    <nav class="collapse navbar-collapse " role="navigation">
+                        <ul class="nav navbar-nav ">
+                            <li>
+                                <a href="tel:+7(495)1009090" class="bankVideo-navbarItem">
+                                    +7 (495) 100 - 90 - 90
+                                </a>
+                            </li>
+
+                            <li class="basketWrapper">
+                                <a href="/basket" class="bankVideo-navbarItem ">
+                                    <span class="left bankVideo-basket">Ваша корзина</span>
+                                    <span class="left bankVideo-basketCount">
+                                        Кол-во: 199 шт.
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="signupWrapper">
+                                <div class="bankVideo-navbarItem nonAuthLinks hidden">
+                                    <a href="#" class="bankVideo-signUp">Регистрация</a>
+                                    /
+                                    <a href="#" class="bankVideo-signUp">Вход</a>
+                                </div>
+                                <div class="bankVideo-navbarItem authLinks">
+                                    <a href="#" class="userNickname">UserNickname</a>
+                                    /
+                                    <a href="#" class="logoutHref">Выйти</a>
+                                </div>
+                            </li>
+                            <li class="dropdown ">
+                                <div class="chooseLang">Выбор языка</div>
+                                <a href="#" class="dropdown-toggle bankVideo-langDropdown" data-toggle="dropdown"> 
+                                    Русский 
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Русский</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="containerSmall wrapper">
+                <div class="menuBlocks clearfix">
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#" class="videoLink">
+                            Видео    
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#" class="photoLink">
+                            Фото
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#" >
+                            <span class="dottedBorder">Купить на Bank Video</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            <span class="dottedBorder">Для покупателей</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            <span class="dottedBorder">Для авторов</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            <span class="dottedBorder">Правила</span>
+                        </a>
+                    </div>
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12" >
+                        <a href="#">
+                            О Bank Video
+                        </a>
+                    </div>
+
+                    <div class="col-custom col-md-6 col-sm-6 col-xs-12 pull-right" >
+                        <form role="search" class="searchForm">
+                            <input type="text" class="input-sm searchInput pull-left" placeholder="Поиск">
+                            <button type="submit" class="searchBtn pull-left"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix profileMenu profileMenu-Cart profileMenu-CartShow">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 " >
+                        <span class="pageSubtitle">
+                            Фото
+                        </span>
+                    </div>
+                    <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12 goodsAmount" >
+                        Кол-во товаров в базе (X из Y)
+                    </div>
+                    <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12 col-linkToProfile" >
+                        <a href="#" >
+                            Личный кабинет
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                <div class="clearfix editFileWrapper">
+                    <div class="col-md-5 col-sm-6 col-xs-12 col-editFile">
+
+                        <div class="col-md-12">
+                            <span class="pull-left">Имя файла:</span>
+                            <span class="pull-left greyText">Теория большого взрыва</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Автор:</span>
+                            <span class="pull-left greyText">Леонард</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Описание:</span>
+                            <span class="pull-left greyText">Сериал</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Кол-во просмотров:</span>
+                            <span class="pull-left greyText">34</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Загрузки:</span>
+                            <span class="pull-left greyText">567</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Город:</span>
+                            <span class="pull-left greyText">Пасадена</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Страна:</span>
+                            <span class="pull-left greyText">США</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Дата загрузки файла:</span>
+                            <span class="pull-left greyText">06.04.2014</span>
+                        </div>
+                        <div class="col-md-12">
+                            <span class="pull-left">Наличие релиза:</span>
+                            <span class="pull-left greyText">Нет</span>
+                        </div>
+                        <div class="col-md-12 showTags">
+                            <span class="pull-left">Ключевые слова:</span>
+                            <span class="pull-left greyText">Сериал, Юмор, Ученые, Космос, Кино, Развлечения</span>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div>Параметры файла:</div>
+                            <div class="greyText">3454x455 234Mb</div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <span class="itemPrice">Цена: 34545 руб.</span>
+                        </div>
+                        <div class="col-md-12 ">
+                            <button type="button" class="btn btn-cyan">Добавить в корзину</button>
+                        </div>
+                        <div class="col-md-12 ">
+                            <a href="#" class="backToCatalog">Вернуться в каталог</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-12 col-filePreview">
+                        <img src="css/img/slider.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div id="push"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="containerSmall">
+                <div class="footerDark">
+                    <div class="col-lg-9 col-md-9 col-xs-12 noPaddingRight">
+                        <div>Мы принимаем к оплате:</div>
+                        <div class="paymentLinksWrapper left">
+                            <a href="#" class="left paymentLinks visaLink"></a>
+                            <a href="#" class="left paymentLinks qiwiLink"></a>
+                            <a href="#" class="left paymentLinks yaLink"></a>
+                            <a href="#" class="left paymentLinks beeLink"></a>
+                            <a href="#" class="left paymentLinks megafonLink"></a>
+                            <a href="#" class="left paymentLinks mtsLink"></a>
+                            <a href="#" class="right assistLink"></a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div>Социальные закладки:</div>
+                        <div class="socialLinksWrapper">
+                            <a href="#" class="left socialLinks fbLink"></a>
+                            <a href="#" class="left socialLinks twLink"></a>
+                            <a href="#" class="left socialLinks vkLink"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerBottom">
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <a href="/">
+                            www.bankvideo.com &COPY; 2014   
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+                        Техподдержка: 
+                        <a href="mailto:sd@bankvideo.com">
+                            sd@bankvideo.com
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 text-right">
+                        Разработка:
+                        <a href="/">
+                            Red Homet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+
+    </body>
+</html>
