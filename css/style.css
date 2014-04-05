@@ -621,7 +621,7 @@ video{
     color: #07b5b6;
 }
 .profileMenu-CartShow .goodsAmount{
-    text-align: left;
+    text-align: center;
     color: #8f8f8f;
 }
 
@@ -942,6 +942,52 @@ video{
     margin-bottom: 10px;
 }
 
+.col-fileDescription{
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: #333;
+    padding-left: 10px;
+}
+.col-fileDescription .greyText{
+    color: #a6a6a6;
+    margin-left: 5px;
+}
+.col-fileDescription .fileParameters{
+    margin-left: 0;
+}
+.col-fileDescription .showTags{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.col-fileDescription .itemPrice{
+    color: #07b5b6;
+    text-transform: uppercase;
+    /*text-align: center;*/
+    font-size: 25px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 28px 0 8px 0;
+}
+
+.col-fileDescription .backToCatalog{
+    margin: 40px 0 20px 0;
+}
+.col-fileDescription .backToCatalog a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+.col-fileDescription .col-fileName{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.col-fileDescription .descriptionRow{
+    margin-bottom: 3px;
+}
+.profileMenu-CartShow .pageSubtitle{
+    padding-left: 10px;
+}
+
 
 @media only screen 
 and (min-width : 240px)
@@ -1174,6 +1220,7 @@ and (max-width : 320px) {
 
     .profileMenu-CartShow .col-linkToProfile a{
         float: none;
+        padding: 0;
     }
     .profileMenu-CartShow .goodsAmount{
         text-align: left;
