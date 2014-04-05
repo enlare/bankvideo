@@ -11,6 +11,9 @@ $(window).on('load', function() {
 
     $('.selectpicker').selectpicker();
 });
+$(document).ready(function() {
+    $('.filterRange').slider({});
+});
 //$(window).resize(function() {
 //    resizeVideoWrapper();
 //});

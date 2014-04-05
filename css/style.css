@@ -992,6 +992,29 @@ video{
     font-size: 16px;
     color: #666;
 }
+.pageTitleBlock{
+    padding-left: 20px;
+    margin-bottom: 10px
+}
+.col-filters .pageTitleBlock{
+    padding-left: 10px;
+}
+.filesFilter{
+    list-style: none;
+}
+.filesFilter li{
+    display: block;
+    border-bottom: 1px #ccc dotted;
+    line-height: 30px;
+    height: 30px;
+}
+.filesFilter li a{
+    color: #666;
+    text-decoration: none;
+}
+.filterInput{
+    width: 20%;
+}
 
 @media only screen 
 and (min-width : 240px)
@@ -1230,7 +1253,6 @@ and (max-width : 320px) {
         text-align: left;
 
     }
-
 
 }
 
