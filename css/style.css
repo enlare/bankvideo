@@ -987,7 +987,11 @@ video{
 .profileMenu-CartShow .pageSubtitle{
     padding-left: 10px;
 }
-
+.plusHref{
+    text-decoration: none;
+    font-size: 16px;
+    color: #666;
+}
 
 @media only screen 
 and (min-width : 240px)
