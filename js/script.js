@@ -6,8 +6,10 @@ function resizeVideoWrapper()
     });
 }
 
-$(window).load(function() {
+$(window).on('load', function() {
     resizeVideoWrapper();
+
+    $('.selectpicker').selectpicker();
 });
 //$(window).resize(function() {
 //    resizeVideoWrapper();
