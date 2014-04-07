@@ -153,7 +153,8 @@ hr{
     white-space: normal;
     display: inline-block;
     font-size: 14px;
-    margin: 5px 10px 0 0;
+    line-height: 13px;
+    margin: 14px 10px 0 0;
     color: #fff;
 }
 
@@ -758,14 +759,20 @@ video{
     width: 32%;
 }
 .filesAmount{
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-    font-family: 'Roboto';
+    /*font-family: 'Roboto';*/
+    margin-top: 5px;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #333;
+    
 }
 
 .paginationRow{
     font-family: 'Roboto';
     font-size: 14px;
+    margin-top: 7px;
 }
 
 .bankVideo-pagination {
@@ -813,6 +820,7 @@ video{
     line-height: 35px;
     color: #333;
     text-align: right;
+    padding-right: 20px;
 }
 .tableFilter a{
     color: #333;
@@ -839,6 +847,7 @@ video{
 .table-uploads > tbody > tr > td,
 .table-uploads > tfoot > tr > td {
     border-top: 1px solid #ddd;
+    vertical-align: middle;
 }
 
 .table-uploads > thead > tr > th,
@@ -1015,6 +1024,10 @@ video{
 .filterInput{
     width: 20%;
 }
+
+
+
+
 
 @media only screen 
 and (min-width : 240px)
@@ -1253,7 +1266,10 @@ and (max-width : 320px) {
         text-align: left;
 
     }
-
+    .filesAmount, .paginationRow{
+        margin-top: 0;
+    }
+ 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
