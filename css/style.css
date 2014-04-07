@@ -326,6 +326,7 @@ video{
 .videoWrapper {
     position: relative;
     z-index: 1000!important;
+    overflow: hidden;
 }
 
 
@@ -462,8 +463,9 @@ video{
 }
 
 .col-contentOfDay{
-    width: 36%;
-    padding-right: 10px;
+    /*width: 36%;*/
+    width: 320px;
+    /*padding-right: 10px;*/
     padding-left: 0px;
 }
 .col-contentOfDay h3 a{
@@ -478,20 +480,34 @@ video{
 }
 .contentOfDayBig{
     padding: 3px 3px 4px 3px;
-    position: relative;
+    /*position: relative;*/
     margin-bottom: 3px;
 }
 .contentOfDaySmall{
-    width: 33.333%;
-    padding: 0 3px;
+    /*width: 33.333%;*/
+    /*padding: 0 3px;*/
     display: block;
+    width: 104px;
+    max-width: 104px;
+    height: 77px;
+    max-height: 77px;
+    overflow: hidden;
 }
-
-.contentOfDayBig .contentOfDayOverlay{
-    left: 4px;
-    bottom: 3px;
-    width: 65%;
-    min-width: 100px;
+.contentOfDaySmall-second{
+    margin: 0 3px;
+}
+.contentOfDaySmall-wrapper{
+    width: 320px;
+    max-width: 320px;
+    margin-top: 4px;
+    position: relative;
+}
+.videoWrapper-dayContent .contentOfDayOverlay{
+    left: 0px;
+    bottom: 0px;
+    width: 190px;
+    min-width: 190px;
+    position: absolute;
 }
 
 
@@ -589,8 +605,8 @@ video{
     background: url(img/right.png) 0 0 no-repeat;
 }
 .col-newVideo,.col-newVideoRow{
-    padding-left: 3px;
-    padding-right: 3px;
+/*    padding-left: 3px;
+    padding-right: 3px;*/
 }
 .col-newVideo .cyanHref{
     font-family: 'Roboto';
@@ -766,7 +782,7 @@ video{
     display: block;
     font-family:Arial, Helvetica, sans-serif;
     color: #333;
-    
+
 }
 
 .paginationRow{
@@ -1026,6 +1042,35 @@ video{
 }
 
 
+.videoWrapper-main{
+    width: 690px !important;
+    height: 390px !important;
+    max-width: 690px !important;
+    max-height: 390px !important;
+}
+.videoWrapper-slider{
+    width: 210px !important;
+    height: 120px !important;
+    max-width: 210px !important;
+    max-height: 120px !important;
+}
+.videoWrapper-dayContent{
+    width: 320px !important;
+    height: 212px !important;
+    max-width: 320px !important;
+    max-height: 212px !important;
+}
+.videoWrapper-new{
+    width: 218px !important;
+    height: 132px !important;
+    max-width: 218px !important;
+    max-height: 132px !important;
+    background: red;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
 
 
 
@@ -1269,7 +1314,7 @@ and (max-width : 320px) {
     .filesAmount, .paginationRow{
         margin-top: 0;
     }
- 
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
