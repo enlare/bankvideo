@@ -366,10 +366,15 @@ video{
 }
 .col-video{
     padding: 4px 0 0 0 ;
+    width: 690px;
+    float: left;
 }
 .sliderWrapper{
     text-align: center;
-    padding: 4px 8px 0 8px;
+    /*padding: 4px 8px 0 8px;*/
+    width: 210px;
+    margin: 4px 5px 0 auto;
+    float: right;
 }
 
 .sliderListWrapper ul{
@@ -433,8 +438,9 @@ video{
 
 
 .col-about-project{
-    width: 28%;
-    padding: 0 10px 0 10px;
+    /*width: 28%;*/
+    padding: 0 10px;
+    width: 248px;
     font-size: 13px;
     color: #333333;
     font-family:Arial, Helvetica, sans-serif;
@@ -455,7 +461,7 @@ video{
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     color: #333;
 }
 .newsBlock h3{
@@ -464,8 +470,8 @@ video{
 
 .col-contentOfDay{
     /*width: 36%;*/
-    width: 320px;
-    /*padding-right: 10px;*/
+    width: 330px;
+    padding-right: 10px;
     padding-left: 0px;
 }
 .col-contentOfDay h3 a{
@@ -494,7 +500,7 @@ video{
     overflow: hidden;
 }
 .contentOfDaySmall-second{
-    margin: 0 3px;
+    margin: 0 4px;
 }
 .contentOfDaySmall-wrapper{
     width: 320px;
@@ -557,6 +563,9 @@ video{
     padding-left: 6px;
     padding-right: 0;
 }
+.newsTextWrapper .cyanHref{
+     font-family:Arial, Helvetica, sans-serif;
+}
 .allNews{
     font-size: 14px;
     font-family: 'Roboto';
@@ -573,10 +582,13 @@ video{
     font-size: 20px;
     margin-top: 0;
 }
+.newVideo h3{
+    font-family:Arial, Helvetica, sans-serif;
+}
 .newVideo{
-    padding-left: 7px;
-    padding-right: 7px;
-    margin-bottom: 10px;
+    /*padding-left: 7px;*/
+    /*padding-right: 7px;*/
+    margin-bottom: 15px;
 }
 .newVideo .itemDescription{
     font-family: 'Roboto';
@@ -604,9 +616,13 @@ video{
 .rightArrow{
     background: url(img/right.png) 0 0 no-repeat;
 }
+.col-newVideo{
+    float: left;
+    margin-left: 7px;
+}
 .col-newVideo,.col-newVideoRow{
-/*    padding-left: 3px;
-    padding-right: 3px;*/
+    /*    padding-left: 3px;
+        padding-right: 3px;*/
 }
 .col-newVideo .cyanHref{
     font-family: 'Roboto';
@@ -853,7 +869,7 @@ video{
     border: none;
     border-bottom: 2px solid #ddd;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .table-uploads > thead > tr > th,
@@ -895,6 +911,10 @@ video{
 }
 .deleteCell{
     max-width: 100px;
+}
+.deleteCell .cyanHref{
+        font-family:Arial, Helvetica, sans-serif;
+
 }
 .tableWrapper{
     padding-left: 20px;
@@ -1065,9 +1085,16 @@ video{
     height: 132px !important;
     max-width: 218px !important;
     max-height: 132px !important;
-    background: red;
-    display: table-cell;
-    vertical-align: middle;
+    /*background: red;*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+.videoWrapper-new img{
+    max-width: 218px !important;
+    width: 218px !important;
+    /*max-height: 132px !important;*/
+    margin: auto;
+    /*display: inline-block;*/
 }
 
 
