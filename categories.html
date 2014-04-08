@@ -149,7 +149,7 @@
                 </div>
                 <hr />
                 <div class="clearfix editFileWrapper">
-                    <div class="col-md-5 col-sm-6 col-xs-12 col-filters">
+                    <div class="col-filters">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pageTitleBlock">
                             Фильтры
                         </div>
@@ -179,14 +179,14 @@
                             <div class="pull-left">
                                 от
                             </div>
-                            <div class="pull-left filterInput">
-                                <input type="text" value="" class="bankVideoInput">
+                            <div class="pull-left ">
+                                <input type="text" value="" class="bankVideoInput filterInput marginInput">
                             </div>
                             <div class="pull-left">
                                 до
                             </div>
-                            <div class="pull-left filterInput">
-                                <input type="text" value="" class="bankVideoInput">
+                            <div class="pull-right ">
+                                <input type="text" value="" class="bankVideoInput filterInput marginInput-left">
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -198,45 +198,53 @@
                                    data-slider-min="0" data-slider-max="1000" data-slider-step="100"
                                    data-slider-value="[250,450]"/> 
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 filterRow">
                             <div class="pull-left">
                                 от
                             </div>
-                            <div class="pull-left filterInput">
-                                <input type="text" value="" class="bankVideoInput">
+                            <div class="pull-left">
+                                <input type="text" value="" class="bankVideoInput filterInput marginInput">
                             </div>
                             <div class="pull-left">
                                 до
                             </div>
-                            <div class="pull-left filterInput">
-                                <input type="text" value="" class="bankVideoInput">
+                            <div class="pull-right ">
+                                <input type="text" value="" class="bankVideoInput filterInput marginInput-left">
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 filterRow">
                             <div class="pull-left">
                                 Город
                             </div>
-                            <div class="pull-left">
-                                <input type="text" value="" class="bankVideoInput">
+                            <div class="pull-right">
+                                <input type="text" value="" class="bankVideoInput filterLargeInput">
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 filterRow">
                             <div class="pull-left">
                                 Страна
                             </div>
-                            <div class="pull-left">
-                                <input type="text" value="" class="bankVideoInput">
+                            <div class="pull-right">
+                                <input type="text" value="" class="bankVideoInput filterLargeInput">
                             </div>
                         </div>
+                        
+                        <div class="btnScrollToTop">
+                            <div class="cyanCircle">
+                                <b id="up-triangle"></b>
+                            </div>
+                            <div class="text-center">вверх</div>
+                        </div>
                     </div>
-                    <div class="col-md-7 col-sm-6 col-xs-12 col-files">
+                    <div class="col-files">
                         <div class="clearfix paginationRow">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                                <!--<span class="pull-left">Страница</span>-->
                                 <ul class="pagination bankVideo-pagination pull-left">
-                                    <!--                    
-                                    в макете не было стрелок, но какая пагинация без стрелок
-                                    
-                                    <li class="disabled"><a href="#">&laquo;</a></li>-->
+
+                                    <!--в макете не было стрелок, но какая пагинация без стрелок-->
+
+                                    <li class="disabled">   <span class="pull-lefvft">Страница</span></li>
                                     <li class="active">
                                         <a href="#">
                                             1 
@@ -257,15 +265,149 @@
                                             100 
                                         </a>
                                     </li>
-                                    <!--<li class="disabled"><a href="#">&raquo;</a></li>-->
+
                                 </ul>
 
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  tableFilter">
-                                Смотреть по  
-                                <a href="#">10</a> . 
-                                <a href="#" class="activePageFilter">20</a> .
-                                <a href="#">30</a> на странице
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  tableFilter tableFilter-categories">
+                                Смотреть по: 
+                                <a href="#">25</a> . 
+                                <a href="#">50</a> .
+                                <a href="#">100</a> на странице
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                            <div class="col-newVideo">
+                                <div class="videoWrapper videoWrapper-new">
+                                    <a href="#" class="newPhotoHref ">
+                                        <img src="css/img/slider.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="itemDescription">
+                                    <div class="itemName">Название</div>
+                                    <div>Автор: <a href="#" class="cyanHref">Джон Смит</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix paginationRow">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                                <!--<span class="pull-left">Страница</span>-->
+                                <ul class="pagination bankVideo-pagination pull-left">
+
+                                    <!--в макете не было стрелок, но какая пагинация без стрелок-->
+
+                                    <li class="disabled">   <span class="pull-lefvft">Страница</span></li>
+                                    <li class="active">
+                                        <a href="#">
+                                            1 
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="#">
+                                            2 
+                                        </a>
+                                    </li>
+                                    <li class="disabled">
+                                        <a href="#" >
+                                            ...
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            100 
+                                        </a>
+                                    </li>
+
+                                </ul>
+
                             </div>
                         </div>
                     </div>
